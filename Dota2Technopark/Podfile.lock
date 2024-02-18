@@ -1,0 +1,23 @@
+PODS:
+  - SteamLogin (0.1.4):
+    - SteamLogin/Login (= 0.1.4)
+  - SteamLogin/Login (0.1.4)
+
+DEPENDENCIES:
+  - "SteamLogin (from `git@github.com:serhii-londar/SteamLogin.git`)"
+
+EXTERNAL SOURCES:
+  SteamLogin:
+    :git: "git@github.com:serhii-londar/SteamLogin.git"
+
+CHECKOUT OPTIONS:
+  SteamLogin:
+    :commit: 2e60135fb22b573ac2f3bf47aa9bc2fd424adb53
+    :git: "git@github.com:serhii-londar/SteamLogin.git"
+
+SPEC CHECKSUMS:
+  SteamLogin: 86eee7733cfaa417242671524f39561b0c22700c
+
+PODFILE CHECKSUM: 765d22c1255af0898ab29bfb2e42f5263fe928bb
+
+COCOAPODS: 1.15.2
