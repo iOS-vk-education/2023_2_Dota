@@ -50,4 +50,5 @@ pod 'SwiftyJSON'
 pod 'SwiftLint'
 ```
 
-## License
+
+![image](https://github.com/unhe1rd/DotaAuthorization/assets/130218904/d1d8d75f-a9af-4421-a856-3d6bdf60cb15)
