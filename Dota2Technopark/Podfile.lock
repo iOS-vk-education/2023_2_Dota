@@ -1,10 +1,25 @@
 PODS:
+  - Alamofire (5.8.1)
+  - SnapKit (5.7.1)
   - SteamLogin (0.1.4):
     - SteamLogin/Login (= 0.1.4)
   - SteamLogin/Login (0.1.4)
+  - SwiftLint (0.54.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - SnapKit
   - "SteamLogin (from `git@github.com:serhii-londar/SteamLogin.git`)"
+  - SwiftLint
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SnapKit
+    - SwiftLint
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   SteamLogin:
@@ -16,8 +31,12 @@ CHECKOUT OPTIONS:
     :git: "git@github.com:serhii-londar/SteamLogin.git"
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SteamLogin: 86eee7733cfaa417242671524f39561b0c22700c
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 765d22c1255af0898ab29bfb2e42f5263fe928bb
+PODFILE CHECKSUM: ef75c20bab17bdedb02274c136bce21baf80a72b
 
 COCOAPODS: 1.15.2

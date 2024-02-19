@@ -1,9 +1,11 @@
 import UIKit
 import SteamLogin
+import SnapKit
 
 class ViewController: UIViewController {
     var steamUser: SteamUser? = nil
-    
+    let containerView = UIView()
+    let label = UILabel()
     override func viewDidAppear(_ animated: Bool) {
         SteamLogin.steamApiKey = "160A1E87653E30D9562DE9E5A47386E5"
         self.steamUser = SteamUser.load()
@@ -21,6 +23,8 @@ class ViewController: UIViewController {
         } else {
             self.perform(#selector(self.showSuccessAlert), with: nil, afterDelay: 1)
         }
+        
+        setupContainerView()
     }
     
     @objc func showSuccessAlert() {
@@ -37,6 +41,19 @@ class ViewController: UIViewController {
             alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension ViewController {
+    func setupContainerView() {
+        view.addSubview(containerView)
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.backgroundColor = .red
+        containerView.snp.makeConstraints { make in
+            make.height.equalTo(100)
+            make.width.equalTo(100)
+        }
+        
     }
 }
 
