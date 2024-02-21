@@ -18,6 +18,14 @@
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
 		B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */; };
+		B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DE92B835EFA004A70DD /* WidgetKit.framework */; };
+		B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */; };
+		B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */; };
+		B4C39DF12B835EFA004A70DD /* Dota2WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */; };
+		B4C39DF32B835EFA004A70DD /* Dota2Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */; };
+		B4C39DF52B835EFA004A70DD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF42B835EFA004A70DD /* AppIntent.swift */; };
+		B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C39DF62B835EFC004A70DD /* Assets.xcassets */; };
+		B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +44,28 @@
 			remoteGlobalIDString = B4185E402B82B1B800F889BA;
 			remoteInfo = Dota2Technopark;
 		};
+		B4C39DF92B835EFC004A70DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4185E392B82B1B800F889BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4C39DE72B835EFA004A70DD;
+			remoteInfo = Dota2WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4C39DFC2B835EFC004A70DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		164C65B4BD89AE5525E5CE7C /* Pods-Dota2Technopark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +89,15 @@
 		B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dota2TechnoparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITests.swift; sourceTree = "<group>"; };
 		B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dota2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C39DE92B835EFA004A70DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2WidgetBundle.swift; sourceTree = "<group>"; };
+		B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2Widget.swift; sourceTree = "<group>"; };
+		B4C39DF42B835EFA004A70DD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B4C39DF62B835EFC004A70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4C39DF82B835EFC004A70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +126,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4C39DE52B835EFA004A70DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */,
+				B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +157,8 @@
 				3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */,
 				650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */,
 				A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */,
+				B4C39DE92B835EFA004A70DD /* WidgetKit.framework */,
+				B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +169,7 @@
 				B4185E432B82B1B800F889BA /* Dota2Technopark */,
 				B4185E5D2B82B1BA00F889BA /* Dota2TechnoparkTests */,
 				B4185E672B82B1BA00F889BA /* Dota2TechnoparkUITests */,
+				B4C39DED2B835EFA004A70DD /* Dota2Widget */,
 				B4185E422B82B1B800F889BA /* Products */,
 				7B110B90E8134BF1C031C53E /* Pods */,
 				AD84CEAB1CE7EEAF80B989DF /* Frameworks */,
@@ -132,6 +182,7 @@
 				B4185E412B82B1B800F889BA /* Dota2Technopark.app */,
 				B4185E5A2B82B1BA00F889BA /* Dota2TechnoparkTests.xctest */,
 				B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */,
+				B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +218,19 @@
 			path = Dota2TechnoparkUITests;
 			sourceTree = "<group>";
 		};
+		B4C39DED2B835EFA004A70DD /* Dota2Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */,
+				B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */,
+				B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */,
+				B4C39DF42B835EFA004A70DD /* AppIntent.swift */,
+				B4C39DF62B835EFC004A70DD /* Assets.xcassets */,
+				B4C39DF82B835EFC004A70DD /* Info.plist */,
+			);
+			path = Dota2Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,10 +243,12 @@
 				B4185E3E2B82B1B800F889BA /* Frameworks */,
 				B4185E3F2B82B1B800F889BA /* Resources */,
 				5BF3D5103BDA94F44CC4A6E9 /* [CP] Embed Pods Frameworks */,
+				B4C39DFC2B835EFC004A70DD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B4C39DFA2B835EFC004A70DD /* PBXTargetDependency */,
 			);
 			name = Dota2Technopark;
 			productName = Dota2Technopark;
@@ -228,6 +294,23 @@
 			productReference = B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C39DFF2B835EFC004A70DD /* Build configuration list for PBXNativeTarget "Dota2WidgetExtension" */;
+			buildPhases = (
+				B4C39DE42B835EFA004A70DD /* Sources */,
+				B4C39DE52B835EFA004A70DD /* Frameworks */,
+				B4C39DE62B835EFA004A70DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dota2WidgetExtension;
+			productName = Dota2WidgetExtension;
+			productReference = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +332,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = B4185E402B82B1B800F889BA;
 					};
+					B4C39DE72B835EFA004A70DD = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = B4185E3C2B82B1B800F889BA /* Build configuration list for PBXProject "Dota2Technopark" */;
@@ -267,6 +353,7 @@
 				B4185E402B82B1B800F889BA /* Dota2Technopark */,
 				B4185E592B82B1BA00F889BA /* Dota2TechnoparkTests */,
 				B4185E632B82B1BA00F889BA /* Dota2TechnoparkUITests */,
+				B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +379,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C39DE62B835EFA004A70DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +524,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4C39DE42B835EFA004A70DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */,
+				B4C39DF52B835EFA004A70DD /* AppIntent.swift in Sources */,
+				B4C39DF32B835EFA004A70DD /* Dota2Widget.swift in Sources */,
+				B4C39DF12B835EFA004A70DD /* Dota2WidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -441,6 +547,11 @@
 			isa = PBXTargetDependency;
 			target = B4185E402B82B1B800F889BA /* Dota2Technopark */;
 			targetProxy = B4185E652B82B1BA00F889BA /* PBXContainerItemProxy */;
+		};
+		B4C39DFA2B835EFC004A70DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */;
+			targetProxy = B4C39DF92B835EFC004A70DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -579,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 283F3BD6FF224DB6A5E8840F /* Pods-Dota2Technopark.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -609,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 164C65B4BD89AE5525E5CE7C /* Pods-Dota2Technopark.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,6 +828,60 @@
 			};
 			name = Release;
 		};
+		B4C39DFD2B835EFC004A70DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dota2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark.Dota2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4C39DFE2B835EFC004A70DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dota2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark.Dota2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -750,6 +917,15 @@
 			buildConfigurations = (
 				B4185E752B82B1BA00F889BA /* Debug */,
 				B4185E762B82B1BA00F889BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C39DFF2B835EFC004A70DD /* Build configuration list for PBXNativeTarget "Dota2WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C39DFD2B835EFC004A70DD /* Debug */,
+				B4C39DFE2B835EFC004A70DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
