@@ -10,40 +10,40 @@ import SwiftUI
 struct MatchContentView: View {
     var body: some View {
         MatchHeaderView()
+        //Тут должен быть вью выбора детальной инфы
+        ScrollView(showsIndicators: false){
+            VStack(alignment: .leading){
+                VStack(spacing: 1, content: {
+                    TeamHeaderView(teamName: "Силы Света")
+                    ForEach(0 ..< 5) { i in
+                        MatchListCellView()
+                    }
+                })
+                VStack(spacing: 1, content: {
+                    TeamHeaderView(teamName: "Силы тьмы")
+                    ForEach(0 ..< 5) { i in
+                        MatchListCellView()
+                    }
+                })
+            }
+        }
         Spacer()
     }
 }
 
-struct MatchListCellView: View{
+
+struct TeamHeaderView: View{
+    let teamName: String
     var body: some View {
         HStack {
-            Image("heroIcon")
-                .resizable()
-                .frame(width: 50, height: 50)
-            VStack(alignment: .leading, content:
-                {
-                    Text("Oleg_nagibator")
-                        .font(.system(size: 16))
-                        .foregroundColor(.white)
-                HStack {
-                    Text("14 / 0 / 0")
-                        .font(.system(size: 16))
-                        .foregroundColor(.white)
-                        .padding(.trailing,16)
-                    Text("95678")
-                        .font(.system(size: 16))
-                        .foregroundColor(.yellow)
-                    Image("money")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.yellow)
-                }
-                })
+            Text(teamName)
+                .font(.title)
+                .foregroundColor(.white)
         }
-        .padding(8)
-        .background(.gray)
+        .background(.blue)
     }
 }
+
 
 struct MatchHeaderView: View{
     var body: some View {
@@ -86,6 +86,90 @@ struct MatchHeaderView: View{
     }
 }
 
+
+struct MatchListCellView: View{
+    var body: some View {
+        VStack {
+            HStack {
+                Image("heroIcon")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                VStack(alignment: .leading, content:
+                    {
+                        Text("Oleg_nagibator")
+                            .font(.system(size: 16))
+                            .foregroundColor(.white)
+                    HStack {
+                        Text("14 / 0 / 0")
+                            .font(.system(size: 16))
+                            .foregroundColor(.white)
+                            .padding(.trailing,16)
+                        Image("moneyPig")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .aspectRatio(contentMode: .fit)
+                        Text("95678")
+                            .font(.system(size: 16))
+                            .foregroundColor(.yellow)
+                        
+                    }
+                })
+                Spacer()
+                VStack(alignment: .trailing, content: {
+                    ItemsCellView()
+                })
+                .background(.blue)
+            }
+            .padding(4)
+            .background(.gray)
+        }
+    }
+}
+
+struct ItemsCellView: View {
+    var imageLenght:CGFloat = 20
+    var body: some View{
+        HStack(spacing: 12, content: {
+            VStack {
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+                
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+            }
+            
+            VStack {
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+                
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+            }
+            VStack{
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+                
+                Image("photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: imageLenght, height: imageLenght)
+            }
+        })
+        .padding(6)
+    }
+}
+
+
 #Preview{
-    MatchListCellView()
+    MatchContentView()
 }
