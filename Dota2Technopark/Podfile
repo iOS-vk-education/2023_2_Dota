@@ -7,7 +7,7 @@ target 'Dota2Technopark' do
 
   # Pods for Dota2Technopark
 
-	pod 'SteamLogin', :git => 'git@github.com:serhii-londar/SteamLogin.git'
+	pod 'SteamLogin'
   pod 'Alamofire'
   pod 'SnapKit'
   pod 'SwiftyJSON'
