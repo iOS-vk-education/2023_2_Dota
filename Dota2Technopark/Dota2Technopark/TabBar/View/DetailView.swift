@@ -8,27 +8,6 @@
 import Foundation
 import SwiftUI
 
-enum TabState {
-    case search
-    case main
-    case settings
-}
-
-struct ButtonConfiguration: Hashable {
-    let name: String
-    let image: Image
-    let tag: TabState
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
-        hasher.combine(tag)
-    }
-    
-    static func == (lhs: ButtonConfiguration, rhs: ButtonConfiguration) -> Bool {
-        return lhs.name == rhs.name && lhs.tag == rhs.tag
-    }
-}
-
 struct DetailView: View {
     
     init() {
@@ -139,7 +118,7 @@ struct TabBarItem: View {
                 Spacer()
             }
             .opacity(selectedTab == config.tag ? 1 : 0.5)
-            .padding(.horizontal, 7)
+            .padding(.horizontal, 15)
             .padding(.vertical, 7)
             .background(selectedTab == config.tag ? Color.white : Color.init(hex: "BFBFC1"))
             .clipShape(Capsule())
