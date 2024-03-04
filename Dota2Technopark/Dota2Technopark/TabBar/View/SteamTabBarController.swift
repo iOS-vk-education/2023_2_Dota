@@ -10,9 +10,9 @@ import SwiftUI
 import SteamLogin
 import SnapKit
 
-final class SUITabBarController: UIHostingController<ContentView> {
+final class SUITabBarController: UIHostingController<DetailView> {
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder, rootView: ContentView())
+        super.init(coder: aDecoder, rootView: DetailView())
     }
 }
 
