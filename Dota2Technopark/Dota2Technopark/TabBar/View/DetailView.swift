@@ -71,10 +71,9 @@ struct DetailView: View {
                                 .padding(.horizontal, 15)
                         }
                     }
-                    .padding(.vertical, 5)
-                    .padding(.bottom, 35)
-                    .frame(width: geometry.size.width, height: geometry.size.height * 0.12)
-                    .background(Color.gray)
+                    .padding(.bottom, 30)
+                    .frame(width: geometry.size.width, height: geometry.size.height * 0.1)
+                    .background(Color.init(hex: "BFBFC1"))
                 }
             }
             .ignoresSafeArea(edges: .bottom)
@@ -114,7 +113,7 @@ struct TabBarItem: View {
                 .opacity(selectedTab == config.tag ? 1 : 0.5)
                 .padding(.horizontal, 5)
                 .padding(.vertical, 5)
-                .background(selectedTab == config.tag ? Color.white : Color.gray)
+                .background(selectedTab == config.tag ? Color.white : Color.init(hex: "BFBFC1"))
                 .clipShape(Capsule())
             }
         } else {
@@ -142,7 +141,7 @@ struct TabBarItem: View {
             .opacity(selectedTab == config.tag ? 1 : 0.5)
             .padding(.horizontal, 7)
             .padding(.vertical, 7)
-            .background(selectedTab == config.tag ? Color.white : Color.gray)
+            .background(selectedTab == config.tag ? Color.white : Color.init(hex: "BFBFC1"))
             .clipShape(Capsule())
         }
     }
