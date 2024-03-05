@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		37542AD3E0F069A8921D7FCB /* Pods_Dota2TechnoparkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */; };
 		44697F4465DD4C88DC3950E1 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */; };
+		7404ADEF2B97780A0022D872 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404ADEE2B97780A0022D872 /* Constants.swift */; };
 		7434FC3A2B951F40006C367B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC392B951F40006C367B /* ContentView.swift */; };
 		7434FC422B95269C006C367B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC412B95269C006C367B /* DetailView.swift */; };
 		7434FC492B954619006C367B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC482B954619006C367B /* UIColor+Hex.swift */; };
@@ -79,6 +80,7 @@
 		3183D39C0647415BCFFC1C59 /* Pods-Dota2TechnoparkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2TechnoparkTests.release.xcconfig"; path = "Target Support Files/Pods-Dota2TechnoparkTests/Pods-Dota2TechnoparkTests.release.xcconfig"; sourceTree = "<group>"; };
 		3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2Technopark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2Technopark_Dota2TechnoparkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7404ADEE2B97780A0022D872 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7434FC392B951F40006C367B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7434FC412B95269C006C367B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7434FC482B954619006C367B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				7434FC3E2B95249D006C367B /* View */,
 				7434FC3F2B9525FE006C367B /* ViewModel */,
 				7434FC402B952607006C367B /* Model */,
+				7404ADEE2B97780A0022D872 /* Constants.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				B4185E492B82B1B800F889BA /* SteamTabBarController.swift in Sources */,
 				7434FC422B95269C006C367B /* DetailView.swift in Sources */,
 				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
+				7404ADEF2B97780A0022D872 /* Constants.swift in Sources */,
 				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				7434FC3A2B951F40006C367B /* ContentView.swift in Sources */,
 				7434FC4D2B9548A1006C367B /* ButtonConfiguration.swift in Sources */,

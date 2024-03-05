@@ -25,7 +25,6 @@ struct DetailView: View {
     var body: some View {
         
         ZStack(alignment: .bottom) {
-            Color.gray
             TabView(selection: $selectedTab) {
                 Text("1").tag(TabState.search)
                     .tabItem {
@@ -52,7 +51,7 @@ struct DetailView: View {
                     }
                     .padding(.bottom, 30)
                     .frame(width: geometry.size.width, height: geometry.size.height * 0.1)
-                    .background(Color.init(hex: "BFBFC1"))
+                    .background(TabBarColors.tabBarBackground)
                 }
             }
             .ignoresSafeArea(edges: .bottom)
@@ -62,6 +61,8 @@ struct DetailView: View {
 
 struct TabBarItem: View {
     @State var config: ButtonConfiguration
+    @State private var flagToggle = false
+    
     @Binding var selectedTab: TabState
     
     var body: some View {
@@ -76,7 +77,7 @@ struct TabBarItem: View {
                         ZStack {
                             Circle()
                                 .frame(width: 30, height: 30)
-                                .foregroundColor(selectedTab == config.tag ? Color.green : Color.white)
+                                .foregroundColor(selectedTab == config.tag ? TabBarColors.selectedProfile : TabBarColors.selectedTabBackground)
                             Image("WidgetBackground") // TODO: Заменить на ту что приходит с бека
                                 .resizable()
                                 .frame(width: 25, height: 25)
@@ -85,44 +86,60 @@ struct TabBarItem: View {
                         if selectedTab == config.tag {
                             Text(config.name)
                                 .font(.system(size: 14))
-                                .foregroundColor(.black)
+                                .foregroundColor(TabBarColors.textForeground)
                         }
                     }
                 }
                 .opacity(selectedTab == config.tag ? 1 : 0.5)
                 .padding(.horizontal, 5)
                 .padding(.vertical, 5)
-                .background(selectedTab == config.tag ? Color.white : Color.init(hex: "BFBFC1"))
+                .background(selectedTab == config.tag ? TabBarColors.selectedTabBackground : TabBarColors.tabBarBackground)
                 .clipShape(Capsule())
             }
         } else {
-            ZStack {
-                Button {
-                    withAnimation(.spring()) {
-                        selectedTab = config.tag
-                    }
-                } label: {
-                    HStack {
-                        config.image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 23, height: 23)
-                            .foregroundColor(.black)
-                        if selectedTab == config.tag {
-                            Text(config.name)
-                                .font(.system(size: 14))
-                                .foregroundColor(.black)
-                        }
+            if #available(iOS 17.0, *) {
+            TabBarButton(config: config, selectedTab: $selectedTab, flagToggle: $flagToggle)
+                .symbolEffect(.bounce.down, value: flagToggle)
+            } else {
+                TabBarButton(config: config, selectedTab: $selectedTab, flagToggle: $flagToggle)
+            }
+        }
+    }
+}
+
+struct TabBarButton: View {
+    var config: ButtonConfiguration
+    @Binding var selectedTab: TabState
+    @Binding var flagToggle: Bool
+    
+    var body: some View {
+        ZStack {
+            Button {
+                withAnimation(.spring()) {
+                    selectedTab = config.tag
+                }
+                flagToggle.toggle()
+            } label: {
+                HStack {
+                    config.image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 23, height: 23)
+                        .foregroundColor(TabBarColors.imageForeground)
+                    if selectedTab == config.tag {
+                        Text(config.name)
+                            .font(.system(size: 14))
+                            .foregroundColor(TabBarColors.textForeground)
                     }
                 }
-                Spacer()
             }
-            .opacity(selectedTab == config.tag ? 1 : 0.5)
-            .padding(.horizontal, 15)
-            .padding(.vertical, 7)
-            .background(selectedTab == config.tag ? Color.white : Color.init(hex: "BFBFC1"))
-            .clipShape(Capsule())
+            Spacer()
         }
+        .opacity(selectedTab == config.tag ? 1 : 0.6)
+        .padding(.horizontal, 15)
+        .padding(.vertical, 7)
+        .background(selectedTab == config.tag ? TabBarColors.selectedTabBackground : TabBarColors.tabBarBackground)
+        .clipShape(Capsule())
     }
 }
 
