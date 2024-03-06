@@ -214,6 +214,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		747C9B0D2B99299500195855 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7434FC3B2B9521C4006C367B /* TabBar */,
+				7434FC472B9545EE006C367B /* Extensions */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		7B110B90E8134BF1C031C53E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,8 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				7434FC3C2B9521D7006C367B /* Application */,
-				7434FC3B2B9521C4006C367B /* TabBar */,
-				7434FC472B9545EE006C367B /* Extensions */,
+				747C9B0D2B99299500195855 /* Modules */,
 				7434FC3D2B9521EB006C367B /* Helpers */,
 				B4185E552B82B1BA00F889BA /* Info.plist */,
 			);
