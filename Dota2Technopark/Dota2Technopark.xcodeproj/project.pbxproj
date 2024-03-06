@@ -140,6 +140,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		747C9B0B2B99286900195855 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E442B82B1B800F889BA /* AppDelegate.swift */,
+				B4185E462B82B1B800F889BA /* SceneDelegate.swift */,
+				B4185E482B82B1B800F889BA /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		747C9B0C2B99288100195855 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */,
+				B4185E502B82B1BA00F889BA /* Assets.xcassets */,
+				B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7B110B90E8134BF1C031C53E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,14 +212,10 @@
 		B4185E432B82B1B800F889BA /* Dota2Technopark */ = {
 			isa = PBXGroup;
 			children = (
+				747C9B0B2B99286900195855 /* Application */,
 				B4C39E1B2B873053004A70DD /* Modules */,
-				B4185E442B82B1B800F889BA /* AppDelegate.swift */,
-				B4185E462B82B1B800F889BA /* SceneDelegate.swift */,
-				B4185E482B82B1B800F889BA /* ViewController.swift */,
-				B4185E502B82B1BA00F889BA /* Assets.xcassets */,
-				B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */,
+				747C9B0C2B99288100195855 /* Helpers */,
 				B4185E552B82B1BA00F889BA /* Info.plist */,
-				B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */,
 			);
 			path = Dota2Technopark;
 			sourceTree = "<group>";
