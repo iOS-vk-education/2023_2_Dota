@@ -14,7 +14,7 @@
 		7434FC422B95269C006C367B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC412B95269C006C367B /* DetailView.swift */; };
 		7434FC492B954619006C367B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC482B954619006C367B /* UIColor+Hex.swift */; };
 		7434FC4B2B954663006C367B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC4A2B954663006C367B /* Color+Hex.swift */; };
-		7434FC4D2B9548A1006C367B /* ButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC4C2B9548A1006C367B /* ButtonConfiguration.swift */; };
+		7434FC4D2B9548A1006C367B /* TabBarButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7434FC4C2B9548A1006C367B /* TabBarButtonConfiguration.swift */; };
 		B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E442B82B1B800F889BA /* AppDelegate.swift */; };
 		B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E462B82B1B800F889BA /* SceneDelegate.swift */; };
 		B4185E492B82B1B800F889BA /* SteamTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E482B82B1B800F889BA /* SteamTabBarController.swift */; };
@@ -85,7 +85,7 @@
 		7434FC412B95269C006C367B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7434FC482B954619006C367B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		7434FC4A2B954663006C367B /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
-		7434FC4C2B9548A1006C367B /* ButtonConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfiguration.swift; sourceTree = "<group>"; };
+		7434FC4C2B9548A1006C367B /* TabBarButtonConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonConfiguration.swift; sourceTree = "<group>"; };
 		95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2TechnoparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4185E412B82B1B800F889BA /* Dota2Technopark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2Technopark.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +200,7 @@
 		7434FC402B952607006C367B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7434FC4C2B9548A1006C367B /* ButtonConfiguration.swift */,
+				7434FC4C2B9548A1006C367B /* TabBarButtonConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -583,7 +583,7 @@
 				7404ADEF2B97780A0022D872 /* Constants.swift in Sources */,
 				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				7434FC3A2B951F40006C367B /* ContentView.swift in Sources */,
-				7434FC4D2B9548A1006C367B /* ButtonConfiguration.swift in Sources */,
+				7434FC4D2B9548A1006C367B /* TabBarButtonConfiguration.swift in Sources */,
 				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

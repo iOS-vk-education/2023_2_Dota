@@ -1,11 +1,10 @@
 //
-//  ButtonConfiguration.swift
+//  TabBarButtonConfiguration.swift
 //  Dota2Technopark
 //
 //  Created by Grigory Don on 04.03.2024.
 //
 
-import Foundation
 import SwiftUI
 
 enum TabState {
@@ -14,7 +13,7 @@ enum TabState {
     case settings
 }
 
-struct ButtonConfiguration: Hashable {
+struct TabBarButtonConfiguration: Hashable {
     let name: String
     let image: Image
     let tag: TabState
@@ -24,7 +23,7 @@ struct ButtonConfiguration: Hashable {
         hasher.combine(tag)
     }
     
-    static func == (lhs: ButtonConfiguration, rhs: ButtonConfiguration) -> Bool {
+    static func == (lhs: TabBarButtonConfiguration, rhs: TabBarButtonConfiguration) -> Bool {
         return lhs.name == rhs.name && lhs.tag == rhs.tag
     }
 }

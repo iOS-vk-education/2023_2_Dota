@@ -5,10 +5,7 @@
 //  Created by Mike Ulanov on 19.02.2024.
 //
 
-import UIKit
 import SwiftUI
-import SteamLogin
-import SnapKit
 
 final class SUITabBarController: UIHostingController<DetailView> {
     required init?(coder aDecoder: NSCoder) {

@@ -5,7 +5,6 @@
 //  Created by Grigory Don on 04.03.2024.
 //
 
-import Foundation
 import SwiftUI
 
 struct DetailView: View {
@@ -16,7 +15,7 @@ struct DetailView: View {
     
     @State var selectedTab: TabState = .main
     
-    let buttons: [ButtonConfiguration] = [
+    let buttons: [TabBarButtonConfiguration] = [
         .init(name: "Поиск", image: Image(systemName: "magnifyingglass"), tag: .search),
         .init(name: "Главная", image: Image(systemName: "house"), tag: .main),
         .init(name: "Профиль", image: Image(systemName: "gear"), tag: .settings)
@@ -60,7 +59,7 @@ struct DetailView: View {
 }
 
 struct TabBarItem: View {
-    @State var config: ButtonConfiguration
+    @State var config: TabBarButtonConfiguration
     @State private var flagToggle = false
     
     @Binding var selectedTab: TabState
@@ -68,54 +67,47 @@ struct TabBarItem: View {
     var body: some View {
         if config.tag == .settings {
             Button {
-                withAnimation(.spring()) {
+                withAnimation(.easeInOut) {
                     selectedTab = config.tag
                 }
             } label: {
-                ZStack {
-                    HStack {
-                        ZStack {
-                            Circle()
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(selectedTab == config.tag ? TabBarColors.selectedProfile : TabBarColors.selectedTabBackground)
-                            Image("WidgetBackground") // TODO: Заменить на ту что приходит с бека
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .clipShape(Circle())
-                        }
-                        if selectedTab == config.tag {
-                            Text(config.name)
-                                .font(.system(size: 14))
-                                .foregroundColor(TabBarColors.textForeground)
-                        }
+                HStack {
+                    ZStack {
+                        Circle()
+                            .frame(width: 28, height: 28)
+                            .foregroundColor(selectedTab == config.tag ? TabBarColors.selectedProfile : TabBarColors.selectedTabBackground)
+                        Image("WidgetBackground") // TODO: Заменить на ту что приходит с бека
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .clipShape(Circle())
+                    }
+                    if selectedTab == config.tag {
+                        Text(config.name)
+                            .font(.system(size: 14))
+                            .foregroundColor(TabBarColors.textForeground)
                     }
                 }
                 .opacity(selectedTab == config.tag ? 1 : 0.5)
-                .padding(.horizontal, 5)
+                .padding(.horizontal, 15)
                 .padding(.vertical, 5)
                 .background(selectedTab == config.tag ? TabBarColors.selectedTabBackground : TabBarColors.tabBarBackground)
                 .clipShape(Capsule())
             }
         } else {
-            if #available(iOS 17.0, *) {
             TabBarButton(config: config, selectedTab: $selectedTab, flagToggle: $flagToggle)
-                .symbolEffect(.bounce.down, value: flagToggle)
-            } else {
-                TabBarButton(config: config, selectedTab: $selectedTab, flagToggle: $flagToggle)
-            }
         }
     }
 }
 
 struct TabBarButton: View {
-    var config: ButtonConfiguration
+    var config: TabBarButtonConfiguration
     @Binding var selectedTab: TabState
     @Binding var flagToggle: Bool
     
     var body: some View {
         ZStack {
             Button {
-                withAnimation(.spring()) {
+                withAnimation(.easeInOut) {
                     selectedTab = config.tag
                 }
                 flagToggle.toggle()
@@ -136,15 +128,13 @@ struct TabBarButton: View {
             Spacer()
         }
         .opacity(selectedTab == config.tag ? 1 : 0.6)
-        .padding(.horizontal, 15)
-        .padding(.vertical, 7)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
         .background(selectedTab == config.tag ? TabBarColors.selectedTabBackground : TabBarColors.tabBarBackground)
         .clipShape(Capsule())
     }
 }
 
-struct DetailView_Provider: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
+#Preview {
+    DetailView()
 }

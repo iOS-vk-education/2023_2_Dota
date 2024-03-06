@@ -5,7 +5,6 @@
 //  Created by Grigory Don on 05.03.2024.
 //
 
-import Foundation
 import SwiftUI
 
 enum TabBarInsets {
