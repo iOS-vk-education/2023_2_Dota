@@ -26,6 +26,7 @@
 		B4C39DF52B835EFA004A70DD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF42B835EFA004A70DD /* AppIntent.swift */; };
 		B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C39DF62B835EFC004A70DD /* Assets.xcassets */; };
 		B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		B4C39DF42B835EFA004A70DD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		B4C39DF62B835EFC004A70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C39DF82B835EFC004A70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchContentView.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +192,7 @@
 		B4185E432B82B1B800F889BA /* Dota2Technopark */ = {
 			isa = PBXGroup;
 			children = (
+				B4C39E1B2B873053004A70DD /* Modules */,
 				B4185E442B82B1B800F889BA /* AppDelegate.swift */,
 				B4185E462B82B1B800F889BA /* SceneDelegate.swift */,
 				B4185E482B82B1B800F889BA /* ViewController.swift */,
@@ -229,6 +232,22 @@
 				B4C39DF82B835EFC004A70DD /* Info.plist */,
 			);
 			path = Dota2Widget;
+			sourceTree = "<group>";
+		};
+		B4C39E1A2B873038004A70DD /* MatchModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */,
+			);
+			path = MatchModule;
+			sourceTree = "<group>";
+		};
+		B4C39E1B2B873053004A70DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B4C39E1A2B873038004A70DD /* MatchModule */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4185E492B82B1B800F889BA /* ViewController.swift in Sources */,
+				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
 				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
@@ -703,7 +723,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,7 +754,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
