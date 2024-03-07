@@ -18,7 +18,7 @@
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
 		B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */; };
-		B44B25E82B99C01E00C2555A /* BackgroundTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44B25E72B99C01E00C2555A /* BackgroundTest.swift */; };
+		B44B25E82B99C01E00C2555A /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44B25E72B99C01E00C2555A /* Background.swift */; };
 		B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DE92B835EFA004A70DD /* WidgetKit.framework */; };
 		B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */; };
 		B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */; };
@@ -91,7 +91,7 @@
 		B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dota2TechnoparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITests.swift; sourceTree = "<group>"; };
 		B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B44B25E72B99C01E00C2555A /* BackgroundTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTest.swift; sourceTree = "<group>"; };
+		B44B25E72B99C01E00C2555A /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dota2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C39DE92B835EFA004A70DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -217,7 +217,7 @@
 				741601782B99329900D26213 /* Application */,
 				B4C39E1B2B873053004A70DD /* Modules */,
 				7416017F2B9932A500D26213 /* Helpers */,
-				B44B25E72B99C01E00C2555A /* BackgroundTest.swift */,
+				B44B25E72B99C01E00C2555A /* Background.swift */,
 				B4185E552B82B1BA00F889BA /* Info.plist */,
 			);
 			path = Dota2Technopark;
@@ -542,7 +542,7 @@
 				7416017D2B99329900D26213 /* AppDelegate.swift in Sources */,
 				7416017C2B99329900D26213 /* ViewController.swift in Sources */,
 				741601852B9932A500D26213 /* Dota2Technopark.xcdatamodeld in Sources */,
-				B44B25E82B99C01E00C2555A /* BackgroundTest.swift in Sources */,
+				B44B25E82B99C01E00C2555A /* Background.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
