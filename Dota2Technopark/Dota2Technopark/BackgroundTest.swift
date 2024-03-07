@@ -46,11 +46,12 @@ struct AnimatingGradientBuilder: View {
 struct BackgroundView: View {
     @Environment(\.colorScheme) var colorScheme
     var imageOnBackground: Bool
+    var durationTime: Int
     var body: some View {
         if colorScheme == .dark{
-            AnimatingGradientBuilder(backgroundColors: [Color.black, Color.cyan], durationTime: 5)
+            AnimatingGradientBuilder(backgroundColors: [Color.black, Color.cyan], durationTime: TimeInterval(durationTime))
         } else {
-            AnimatingGradientBuilder(backgroundColors: [Color.white, Color.mint], durationTime: 5)
+            AnimatingGradientBuilder(backgroundColors: [Color.white, Color.mint], durationTime: TimeInterval(durationTime))
         }
         if imageOnBackground == true {
             Image("backgroundImage")
@@ -64,5 +65,5 @@ struct BackgroundView: View {
 }
 
 #Preview {
-    BackgroundView(imageOnBackground: false)
+    BackgroundView(imageOnBackground: false, durationTime: 5)
 }
