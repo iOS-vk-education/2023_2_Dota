@@ -222,20 +222,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		740488932B9E25BF00F64DAC /* Extensions */ = {
+		740488932B9E25BF00F64DAC /* Instruments + Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				740488942B9E25BF00F64DAC /* UIColor+Hex.swift */,
 				740488952B9E25BF00F64DAC /* Color+Hex.swift */,
 			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		740749992B9E445700D4E2FA /* Instruments + Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Instruments + Extension";
+			path = "Instruments + Extensions";
 			sourceTree = "<group>";
 		};
 		747C9B0B2B99286900195855 /* Application */ = {
@@ -473,10 +466,9 @@
 			isa = PBXGroup;
 			children = (
 				7493E7922B9DE98F00FD3FF1 /* AuthorizationModule */,
-				740488932B9E25BF00F64DAC /* Extensions */,
 				7404888B2B9E25BF00F64DAC /* TabBar */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
-				740488932B9E25BF00F64DAC /* Extensions */,
+				740488932B9E25BF00F64DAC /* Instruments + Extensions */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
 				B4DA71132B9E280800195789 /* ProfileModule */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,
@@ -768,20 +760,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
-				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
 				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
-				747C9B1E2B992B6600195855 /* DetailView.swift in Sources */,
-				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
-				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
-				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
-				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
-				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
-				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
-				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
-				74F536622B9E234E00D81529 /* Background.swift in Sources */,
 				7404889B2B9E25C000F64DAC /* UIColor+Hex.swift in Sources */,
 				7493E7A72B9DECB300FD3FF1 /* AuthViewIO.swift in Sources */,
 				7416017E2B99329900D26213 /* SceneDelegate.swift in Sources */,
