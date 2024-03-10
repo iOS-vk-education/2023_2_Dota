@@ -24,4 +24,8 @@ extension AuthPresenter: AuthViewOutput {
         self.steamUser = SteamUser.load()
         view?.performUser(steamUser: steamUser)
     }
+    
+    func openTabBarView() {
+        router?.openTabBarView()
+    }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol AuthRouterInput: BaseSwiftRouterInput {
-    
+    func openTabBarView()
 }

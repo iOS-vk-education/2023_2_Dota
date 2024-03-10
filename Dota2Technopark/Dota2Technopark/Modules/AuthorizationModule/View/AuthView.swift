@@ -17,22 +17,14 @@ class AuthView: UIViewController {
     
     var output: AuthViewOutput?
     
+    // MARK: - Lyfecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
-    func debugLog(_ user: SteamUser) {
-        print("SteamID32: - ", user.steamID32 ?? "Wrong ID")
-    }
-    
-    func showErrorAlert(_ error: Error?) {
-        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
+    // MARK: - Public methods
     
     @objc func buttonTapped() {
         UIView.animate(withDuration: 0.1,
@@ -47,7 +39,20 @@ class AuthView: UIViewController {
         
         output?.getSteamUser()
     }
-
+    
+    // MARK: - Private methods
+    
+    private func debugLog(_ user: SteamUser) {
+        print("SteamID32: - ", user.steamID32 ?? "Wrong ID")
+    }
+    
+    private func showErrorAlert(_ error: Error?) {
+        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension AuthView {
@@ -96,6 +101,8 @@ extension AuthView {
     }
 }
 
+// MARK: - AuthViewInput
+
 extension AuthView: AuthViewInput {
     func performUser(steamUser: SteamUser?) {
         if steamUser == nil {
@@ -104,12 +111,14 @@ extension AuthView: AuthViewInput {
                 if let user = user {
                     user.save()
                     debugLog(user)
+                    output?.openTabBarView()
                 } else {
                     self.showErrorAlert(error)
                 }
             }
         } else {
             debugLog(steamUser!)
+            output?.openTabBarView()
         }
     }
 }

@@ -14,4 +14,5 @@ protocol AuthViewInput: AnyObject {
 
 protocol AuthViewOutput {
     func getSteamUser()
+    func openTabBarView()
 }

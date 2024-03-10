@@ -12,5 +12,10 @@ final class AuthRouter: BaseSwiftRouter {
 }
 
 extension AuthRouter: AuthRouterInput {
-    
+    func openTabBarView() {
+        let tabScene = SteamTabBarController()
+        
+        tabScene.modalPresentationStyle = .fullScreen
+        self.view?.present(tabScene, animated: true)
+    }
 }
