@@ -398,10 +398,9 @@
 		B4C39E1B2B873053004A70DD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				740749992B9E445700D4E2FA /* Instruments + Extension */,
-				740488932B9E25BF00F64DAC /* Extensions */,
 				7404888B2B9E25BF00F64DAC /* TabBar */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
+				740488932B9E25BF00F64DAC /* Extensions */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
 				B4DA71132B9E280800195789 /* ProfileModule */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,

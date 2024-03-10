@@ -25,18 +25,15 @@ struct DetailView: View {
         
         ZStack(alignment: .bottom) {
             TabView(selection: $selectedTab) {
-                Text("1").tag(TabState.search)
+                Text("3").tag(TabState.search)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
-                Text("2").tag(TabState.main)
-                    .tabItem {
-                        Image(systemName: "house")
-                    }
-                Text("3").tag(TabState.settings)
-                    .tabItem {
-                        Image(systemName: "gear")
-                    }
+                MatchContentView().tag(TabState.settings).tabItem { Image(systemName: "gear")
+                }
+                MainView().tag(TabState.main).tabItem {
+                    Image(systemName: "house")
+                }
             }
             
             GeometryReader { geometry in
