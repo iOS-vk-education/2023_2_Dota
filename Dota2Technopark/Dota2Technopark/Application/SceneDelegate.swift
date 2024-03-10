@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                
        window = UIWindow(windowScene: windowScene)
-       window?.rootViewController = UIHostingController(rootView: AnimatingGradientBuilder(backgroundColors: [Color.black, Color.cyan], durationTime: 1))
+       window?.rootViewController = SteamTabBarController()
        window?.makeKeyAndVisible()
     }
 
