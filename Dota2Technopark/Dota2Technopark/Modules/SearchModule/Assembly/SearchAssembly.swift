@@ -29,12 +29,6 @@ final class SearchAssembly {
         }
     }
     
-    // MARK: - Child components
-    
-    private func addChildComponents() {
-        // Present child submodules here
-    }
-    
     // MARK: - Configure dependencies
     
     private func configureDependenciesWithModuleOutput(moduleOutput: SearchModuleOutput) {
