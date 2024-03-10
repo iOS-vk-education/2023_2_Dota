@@ -216,6 +216,8 @@
 		740749992B9E445700D4E2FA /* Instruments + Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
+				740488932B9E25BF00F64DAC /* Extensions */,
 			);
 			path = "Instruments + Extension";
 			sourceTree = "<group>";
@@ -225,7 +227,6 @@
 			children = (
 				7416017A2B99329900D26213 /* AppDelegate.swift */,
 				7416017B2B99329900D26213 /* SceneDelegate.swift */,
-				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -399,7 +400,6 @@
 			isa = PBXGroup;
 			children = (
 				740749992B9E445700D4E2FA /* Instruments + Extension */,
-				740488932B9E25BF00F64DAC /* Extensions */,
 				7404888B2B9E25BF00F64DAC /* TabBar */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
@@ -692,20 +692,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
-				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
 				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
-				747C9B1E2B992B6600195855 /* DetailView.swift in Sources */,
-				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
-				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
-				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
-				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
-				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
-				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
-				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
-				74F536622B9E234E00D81529 /* Background.swift in Sources */,
 				7404889B2B9E25C000F64DAC /* UIColor+Hex.swift in Sources */,
 				7416017E2B99329900D26213 /* SceneDelegate.swift in Sources */,
 				740488982B9E25C000F64DAC /* DetailView.swift in Sources */,
