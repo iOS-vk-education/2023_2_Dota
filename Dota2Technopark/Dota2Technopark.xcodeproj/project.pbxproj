@@ -184,18 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				747C9B122B992B6600195855 /* Constants.swift */,
-				747C9B132B992B6600195855 /* ViewModel */,
 				747C9B142B992B6600195855 /* Model */,
 				747C9B162B992B6600195855 /* View */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		747C9B132B992B6600195855 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		747C9B142B992B6600195855 /* Model */ = {

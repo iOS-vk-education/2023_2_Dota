@@ -48,7 +48,7 @@ struct DetailView: View {
                                 .padding(.horizontal, 15)
                         }
                     }
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 20)
                     .frame(width: geometry.size.width, height: geometry.size.height * 0.1)
                     .background(TabBarColors.tabBarBackground)
                 }
