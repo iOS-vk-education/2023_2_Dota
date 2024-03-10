@@ -18,7 +18,7 @@ final class SearchAssembly {
     // MARK: - Public method
     
     func assembleModule(
-        moduleOutput: SearchModuleOutput,
+        moduleOutput: SearchModuleOutput?,
         transition: ((SearchRouterInput) -> Void)?,
         completion: ((SearchModuleInput) -> Void)?
     ) {
@@ -31,7 +31,7 @@ final class SearchAssembly {
     
     // MARK: - Configure dependencies
     
-    private func configureDependenciesWithModuleOutput(moduleOutput: SearchModuleOutput) {
+    private func configureDependenciesWithModuleOutput(moduleOutput: SearchModuleOutput?) {
         presenter.view = view
         view.output = presenter
         

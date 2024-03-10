@@ -10,14 +10,17 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-               
-       window = UIWindow(windowScene: windowScene)
-       window?.rootViewController = UIHostingController(rootView: AnimatingGradientBuilder(backgroundColors: [Color.black, Color.cyan], durationTime: 1))
-       window?.makeKeyAndVisible()
+        window = UIWindow(windowScene: windowScene)
+        
+        let searchModule = SearchAssembly()
+        
+        searchModule.assembleModule(moduleOutput: nil, transition: { [weak self] router in
+            router.openModuleFromWindow(window: self?.window)
+        }, completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

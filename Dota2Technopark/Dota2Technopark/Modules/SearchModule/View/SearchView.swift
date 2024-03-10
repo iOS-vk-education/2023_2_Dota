@@ -9,6 +9,12 @@ import UIKit
 
 final class SearchView: UIViewController {
     var output: SearchViewOutput?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .red
+    }
 }
 
 extension SearchView: SearchViewInput {

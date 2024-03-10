@@ -20,8 +20,7 @@ class BaseSwiftRouter: BaseSwiftRouterInput {
     
     func openModuleFromWindow(window: UIWindow?) {
         guard let window = window else { return }
-        let navigationController = UINavigationController(rootViewController: self.view!)
-        window.rootViewController = navigationController
+        window.rootViewController = self.view
         window.makeKeyAndVisible()
     }
     

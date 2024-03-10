@@ -11,6 +11,6 @@ protocol SearchInteractorInput {
     
 }
 
-protocol SearchInteractorOutput {
+protocol SearchInteractorOutput: AnyObject {
     
 }
