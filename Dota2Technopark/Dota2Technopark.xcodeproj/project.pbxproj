@@ -34,6 +34,7 @@
 		B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C39DF62B835EFC004A70DD /* Assets.xcassets */; };
 		B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */; };
+		B4DA71152B9E281A00195789 /* formerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DA71142B9E281A00195789 /* formerge.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		B4C39DF62B835EFC004A70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C39DF82B835EFC004A70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchContentView.swift; sourceTree = "<group>"; };
+		B4DA71142B9E281A00195789 /* formerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formerge.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -312,11 +314,20 @@
 		B4C39E1B2B873053004A70DD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B4DA71132B9E280800195789 /* ProfileModule */,
 				747C9B0E2B992B6600195855 /* Extensions */,
 				747C9B112B992B6600195855 /* TabBar */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		B4DA71132B9E280800195789 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4DA71142B9E281A00195789 /* formerge.swift */,
+			);
+			path = ProfileModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DA71152B9E281A00195789 /* formerge.swift in Sources */,
 				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
 				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
