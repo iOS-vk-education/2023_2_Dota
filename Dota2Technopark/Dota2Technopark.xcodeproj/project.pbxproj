@@ -15,6 +15,16 @@
 		741601852B9932A500D26213 /* Dota2Technopark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 741601802B9932A500D26213 /* Dota2Technopark.xcdatamodeld */; };
 		741601862B9932A500D26213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741601822B9932A500D26213 /* Assets.xcassets */; };
 		741601872B9932A500D26213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741601832B9932A500D26213 /* LaunchScreen.storyboard */; };
+		7493E7772B9DDABA00FD3FF1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7762B9DDABA00FD3FF1 /* SearchView.swift */; };
+		7493E7792B9DDACC00FD3FF1 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7782B9DDACC00FD3FF1 /* SearchAssembly.swift */; };
+		7493E77B2B9DDAD700FD3FF1 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E77A2B9DDAD700FD3FF1 /* SearchRouter.swift */; };
+		7493E77D2B9DDADF00FD3FF1 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E77C2B9DDADF00FD3FF1 /* SearchPresenter.swift */; };
+		7493E77F2B9DDAEE00FD3FF1 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E77E2B9DDAEE00FD3FF1 /* SearchInteractor.swift */; };
+		7493E7812B9DDC1300FD3FF1 /* SearchModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7802B9DDC1300FD3FF1 /* SearchModuleIO.swift */; };
+		7493E7832B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7822B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift */; };
+		7493E7852B9DDD3D00FD3FF1 /* SearchViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7842B9DDD3D00FD3FF1 /* SearchViewIO.swift */; };
+		7493E7872B9DDE9500FD3FF1 /* BaseSwiftRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */; };
+		7493E7892B9DDF3200FD3FF1 /* SearchInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7882B9DDF3200FD3FF1 /* SearchInteractorIO.swift */; };
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
 		B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */; };
@@ -82,6 +92,16 @@
 		741601812B9932A500D26213 /* Dota2Technopark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dota2Technopark.xcdatamodel; sourceTree = "<group>"; };
 		741601822B9932A500D26213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741601842B9932A500D26213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7493E7762B9DDABA00FD3FF1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7493E7782B9DDACC00FD3FF1 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
+		7493E77A2B9DDAD700FD3FF1 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		7493E77C2B9DDADF00FD3FF1 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		7493E77E2B9DDAEE00FD3FF1 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		7493E7802B9DDC1300FD3FF1 /* SearchModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModuleIO.swift; sourceTree = "<group>"; };
+		7493E7822B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouterModuleInput.swift; sourceTree = "<group>"; };
+		7493E7842B9DDD3D00FD3FF1 /* SearchViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewIO.swift; sourceTree = "<group>"; };
+		7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSwiftRouter.swift; sourceTree = "<group>"; };
+		7493E7882B9DDF3200FD3FF1 /* SearchInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorIO.swift; sourceTree = "<group>"; };
 		95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2TechnoparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4185E412B82B1B800F889BA /* Dota2Technopark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2Technopark.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +168,7 @@
 				741601792B99329900D26213 /* ViewController.swift */,
 				7416017A2B99329900D26213 /* AppDelegate.swift */,
 				7416017B2B99329900D26213 /* SceneDelegate.swift */,
+				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -160,6 +181,62 @@
 				741601832B9932A500D26213 /* LaunchScreen.storyboard */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7493E7702B9DDA5A00FD3FF1 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				7493E7752B9DDAA000FD3FF1 /* Assembly */,
+				7493E7742B9DDA9500FD3FF1 /* Router */,
+				7493E7732B9DDA8B00FD3FF1 /* Presenter */,
+				7493E7722B9DDA8100FD3FF1 /* Interactor */,
+				7493E7712B9DDA7700FD3FF1 /* View */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		7493E7712B9DDA7700FD3FF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7493E7762B9DDABA00FD3FF1 /* SearchView.swift */,
+				7493E7842B9DDD3D00FD3FF1 /* SearchViewIO.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7493E7722B9DDA8100FD3FF1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7493E77E2B9DDAEE00FD3FF1 /* SearchInteractor.swift */,
+				7493E7882B9DDF3200FD3FF1 /* SearchInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7493E7732B9DDA8B00FD3FF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7493E77C2B9DDADF00FD3FF1 /* SearchPresenter.swift */,
+				7493E7802B9DDC1300FD3FF1 /* SearchModuleIO.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7493E7742B9DDA9500FD3FF1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7493E77A2B9DDAD700FD3FF1 /* SearchRouter.swift */,
+				7493E7822B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7493E7752B9DDAA000FD3FF1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				7493E7782B9DDACC00FD3FF1 /* SearchAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		7B110B90E8134BF1C031C53E /* Pods */ = {
@@ -264,6 +341,7 @@
 		B4C39E1B2B873053004A70DD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,
 			);
 			path = Modules;
@@ -540,10 +618,20 @@
 			files = (
 				7416017E2B99329900D26213 /* SceneDelegate.swift in Sources */,
 				7416017D2B99329900D26213 /* AppDelegate.swift in Sources */,
+				7493E77D2B9DDADF00FD3FF1 /* SearchPresenter.swift in Sources */,
 				7416017C2B99329900D26213 /* ViewController.swift in Sources */,
+				7493E77B2B9DDAD700FD3FF1 /* SearchRouter.swift in Sources */,
+				7493E7852B9DDD3D00FD3FF1 /* SearchViewIO.swift in Sources */,
+				7493E7872B9DDE9500FD3FF1 /* BaseSwiftRouter.swift in Sources */,
+				7493E7772B9DDABA00FD3FF1 /* SearchView.swift in Sources */,
 				741601852B9932A500D26213 /* Dota2Technopark.xcdatamodeld in Sources */,
+				7493E7812B9DDC1300FD3FF1 /* SearchModuleIO.swift in Sources */,
+				7493E77F2B9DDAEE00FD3FF1 /* SearchInteractor.swift in Sources */,
+				7493E7792B9DDACC00FD3FF1 /* SearchAssembly.swift in Sources */,
+				7493E7892B9DDF3200FD3FF1 /* SearchInteractorIO.swift in Sources */,
 				B44B25E82B99C01E00C2555A /* Background.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
+				7493E7832B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
