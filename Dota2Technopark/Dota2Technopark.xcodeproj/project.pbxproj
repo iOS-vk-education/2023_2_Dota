@@ -225,6 +225,7 @@
 		740488932B9E25BF00F64DAC /* Instruments + Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				74DEB1972B9E4A2A0078B6ED /* Router */,
 				740488942B9E25BF00F64DAC /* UIColor+Hex.swift */,
 				740488952B9E25BF00F64DAC /* Color+Hex.swift */,
 			);
@@ -236,7 +237,6 @@
 			children = (
 				7416017A2B99329900D26213 /* AppDelegate.swift */,
 				7416017B2B99329900D26213 /* SceneDelegate.swift */,
-				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -360,6 +360,14 @@
 			children = (
 				7493E7992B9DE9F000FD3FF1 /* AuthRouter.swift */,
 				7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74DEB1972B9E4A2A0078B6ED /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
