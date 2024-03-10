@@ -225,6 +225,7 @@
 		740488932B9E25BF00F64DAC /* Instruments + Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				74DEB1992B9E4AFB0078B6ED /* Animations */,
 				74DEB1982B9E4A850078B6ED /* BackgroundView */,
 				74DEB1972B9E4A2A0078B6ED /* Router */,
 				740488942B9E25BF00F64DAC /* UIColor+Hex.swift */,
@@ -311,7 +312,6 @@
 		7493E7922B9DE98F00FD3FF1 /* AuthorizationModule */ = {
 			isa = PBXGroup;
 			children = (
-				74F5365F2B9DFEB100D81529 /* steam.json */,
 				7493E79B2B9DE9F500FD3FF1 /* Assembly */,
 				7493E79E2B9DEA2300FD3FF1 /* View */,
 				7493E79F2B9DEA2D00FD3FF1 /* Presenter */,
@@ -378,6 +378,14 @@
 				740488892B9E259700F64DAC /* Background.swift */,
 			);
 			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		74DEB1992B9E4AFB0078B6ED /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				74F5365F2B9DFEB100D81529 /* steam.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		7B110B90E8134BF1C031C53E /* Pods */ = {
