@@ -158,6 +158,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		740749992B9E445700D4E2FA /* Instruments + Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Instruments + Extension";
+			sourceTree = "<group>";
+		};
 		747C9B0B2B99286900195855 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +323,7 @@
 		B4C39E1B2B873053004A70DD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				740749992B9E445700D4E2FA /* Instruments + Extension */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
 				B4DA71132B9E280800195789 /* ProfileModule */,
 				747C9B0E2B992B6600195855 /* Extensions */,
