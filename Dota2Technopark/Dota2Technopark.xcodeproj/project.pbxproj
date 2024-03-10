@@ -51,6 +51,8 @@
 		B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C39DF62B835EFC004A70DD /* Assets.xcassets */; };
 		B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */; };
+		B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */; };
+		B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +152,8 @@
 		B4C39DF62B835EFC004A70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C39DF82B835EFC004A70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchContentView.swift; sourceTree = "<group>"; };
+		B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneView.swift; sourceTree = "<group>"; };
+		B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneView.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -465,9 +469,27 @@
 				740488932B9E25BF00F64DAC /* Extensions */,
 				7404888B2B9E25BF00F64DAC /* TabBar */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
+				B4E8F70F2B9E2CB600C24352 /* MainModule */,
+				B4DA71132B9E280800195789 /* ProfileModule */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		B4DA71132B9E280800195789 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		B4E8F70F2B9E2CB600C24352 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */,
+			);
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -738,6 +760,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
+				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
+				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
+				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
+				747C9B1E2B992B6600195855 /* DetailView.swift in Sources */,
+				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
+				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
+				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
+				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
+				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
+				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
+				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
+				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
+				74F536622B9E234E00D81529 /* Background.swift in Sources */,
 				7404889B2B9E25C000F64DAC /* UIColor+Hex.swift in Sources */,
 				7493E7A72B9DECB300FD3FF1 /* AuthViewIO.swift in Sources */,
 				7416017E2B99329900D26213 /* SceneDelegate.swift in Sources */,
