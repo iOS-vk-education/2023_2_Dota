@@ -231,6 +231,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		740749992B9E445700D4E2FA /* Instruments + Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Instruments + Extension";
+			sourceTree = "<group>";
+		};
 		747C9B0B2B99286900195855 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +476,7 @@
 				740488932B9E25BF00F64DAC /* Extensions */,
 				7404888B2B9E25BF00F64DAC /* TabBar */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
+				740488932B9E25BF00F64DAC /* Extensions */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
 				B4DA71132B9E280800195789 /* ProfileModule */,
 				B4C39E1A2B873038004A70DD /* MatchModule */,
