@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.8.1)
+  - lottie-ios (4.4.0)
   - SnapKit (5.7.1)
   - SteamLogin (0.1.4):
     - SteamLogin/Login (= 0.1.4)
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - lottie-ios
   - SnapKit
   - SteamLogin
   - SwiftLint
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - lottie-ios
     - SnapKit
     - SteamLogin
     - SwiftLint
@@ -24,11 +27,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  lottie-ios: ef1be1f90d54255f08e09d767950e43714661178
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SteamLogin: 86eee7733cfaa417242671524f39561b0c22700c
   SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: aa41797d25349193c3c731efc57cf909a69c708e
+PODFILE CHECKSUM: 5e0f3de9c9a35a12337f7aab15f82f5f95214340
 
 COCOAPODS: 1.15.2

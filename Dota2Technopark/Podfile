@@ -12,6 +12,7 @@ target 'Dota2Technopark' do
   pod 'SnapKit'
   pod 'SwiftyJSON'
   pod 'SwiftLint'
+  pod 'lottie-ios'
 
   target 'Dota2TechnoparkTests' do
     inherit! :search_paths

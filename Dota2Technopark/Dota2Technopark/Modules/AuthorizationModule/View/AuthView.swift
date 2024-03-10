@@ -8,10 +8,12 @@
 import UIKit
 import SteamLogin
 import SnapKit
+import Lottie
 
 class AuthView: UIViewController {
     
     private var steamButton = UIButton()
+    private var steamLogoView = LottieAnimationView()
     
     var output: AuthViewOutput?
     
@@ -40,10 +42,28 @@ class AuthView: UIViewController {
 extension AuthView {
     func setupUI() {
         self.view.backgroundColor = .white
+        setupSteamLogo()
     }
     
     func setupButton() {
         
+    }
+    
+    func setupSteamLogo() {
+        steamLogoView = LottieAnimationView(name: "steam")
+        steamLogoView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(steamLogoView)
+        
+        steamLogoView.play()
+        steamLogoView.loopMode = .loop
+        
+        steamLogoView.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(100)
+            make.width.equalTo(300)
+            make.height.equalTo(300)
+        }
     }
 }
 
