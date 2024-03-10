@@ -225,6 +225,7 @@
 		740488932B9E25BF00F64DAC /* Instruments + Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				74DEB1982B9E4A850078B6ED /* BackgroundView */,
 				74DEB1972B9E4A2A0078B6ED /* Router */,
 				740488942B9E25BF00F64DAC /* UIColor+Hex.swift */,
 				740488952B9E25BF00F64DAC /* Color+Hex.swift */,
@@ -247,7 +248,6 @@
 				B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */,
 				B4185E502B82B1BA00F889BA /* Assets.xcassets */,
 				B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */,
-				740488892B9E259700F64DAC /* Background.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -370,6 +370,14 @@
 				7493E7862B9DDE9500FD3FF1 /* BaseSwiftRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		74DEB1982B9E4A850078B6ED /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				740488892B9E259700F64DAC /* Background.swift */,
+			);
+			path = BackgroundView;
 			sourceTree = "<group>";
 		};
 		7B110B90E8134BF1C031C53E /* Pods */ = {
