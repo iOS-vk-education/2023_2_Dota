@@ -194,14 +194,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7404888B2B9E25BF00F64DAC /* TabBar */ = {
+		7404888B2B9E25BF00F64DAC /* TabBarModule */ = {
 			isa = PBXGroup;
 			children = (
 				7404888C2B9E25BF00F64DAC /* Constants.swift */,
 				7404888D2B9E25BF00F64DAC /* Model */,
 				7404888F2B9E25BF00F64DAC /* View */,
 			);
-			path = TabBar;
+			path = TabBarModule;
 			sourceTree = "<group>";
 		};
 		7404888D2B9E25BF00F64DAC /* Model */ = {
@@ -482,7 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				7493E7922B9DE98F00FD3FF1 /* AuthorizationModule */,
-				7404888B2B9E25BF00F64DAC /* TabBar */,
+				7404888B2B9E25BF00F64DAC /* TabBarModule */,
 				7493E7702B9DDA5A00FD3FF1 /* SearchModule */,
 				740488932B9E25BF00F64DAC /* Instruments + Extensions */,
 				B4E8F70F2B9E2CB600C24352 /* MainModule */,
