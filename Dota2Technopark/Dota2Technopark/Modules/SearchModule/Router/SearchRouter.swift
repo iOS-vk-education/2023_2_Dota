@@ -11,6 +11,6 @@ final class SearchRouter: BaseSwiftRouter {
     
 }
 
-extension SearchRouter : SearchRouterInput {
+extension SearchRouter: SearchRouterInput {
     
 }

@@ -16,11 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let searchModule = SearchAssembly()
+        let authModule = AuthAssembly()
         
-        searchModule.assembleModule(moduleOutput: nil, transition: { [weak self] router in
-            router.openModuleFromWindow(window: self?.window)
-        }, completion: nil)
+        authModule.assembleModule(
+            moduleOutput: nil,
+            transition: { [weak self] router in
+                router.openModuleFromWindow(window: self?.window)
+            },
+            completion: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
