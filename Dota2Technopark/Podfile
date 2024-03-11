@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Dota2Technopark' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Dota2Technopark
+
+	pod 'SteamLogin'
+  pod 'Alamofire'
+  pod 'SnapKit'
+  pod 'SwiftyJSON'
+  pod 'SwiftLint'
+
+  target 'Dota2TechnoparkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Dota2TechnoparkUITests' do
+    # Pods for testing
+  end
+
+end

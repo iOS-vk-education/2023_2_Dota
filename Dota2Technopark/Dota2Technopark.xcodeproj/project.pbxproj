@@ -1,0 +1,1073 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37542AD3E0F069A8921D7FCB /* Pods_Dota2TechnoparkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */; };
+		44697F4465DD4C88DC3950E1 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */; };
+		747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B0F2B992B6600195855 /* UIColor+Hex.swift */; };
+		747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B102B992B6600195855 /* Color+Hex.swift */; };
+		747C9B1C2B992B6600195855 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B122B992B6600195855 /* Constants.swift */; };
+		747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B152B992B6600195855 /* TabBarButtonConfiguration.swift */; };
+		747C9B1E2B992B6600195855 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B172B992B6600195855 /* DetailView.swift */; };
+		747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B182B992B6600195855 /* SteamTabBarController.swift */; };
+		747C9B202B992B6600195855 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C9B192B992B6600195855 /* ContentView.swift */; };
+		74F536622B9E234E00D81529 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F536612B9E234E00D81529 /* Background.swift */; };
+		B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E442B82B1B800F889BA /* AppDelegate.swift */; };
+		B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E462B82B1B800F889BA /* SceneDelegate.swift */; };
+		B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */; };
+		B4185E512B82B1BA00F889BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4185E502B82B1BA00F889BA /* Assets.xcassets */; };
+		B4185E542B82B1BA00F889BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */; };
+		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
+		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
+		B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */; };
+		B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DE92B835EFA004A70DD /* WidgetKit.framework */; };
+		B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */; };
+		B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */; };
+		B4C39DF12B835EFA004A70DD /* Dota2WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */; };
+		B4C39DF32B835EFA004A70DD /* Dota2Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */; };
+		B4C39DF52B835EFA004A70DD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DF42B835EFA004A70DD /* AppIntent.swift */; };
+		B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C39DF62B835EFC004A70DD /* Assets.xcassets */; };
+		B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */; };
+		B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */; };
+		B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */; };
+		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
+		DADA249B2B9F95C300B3F246 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA249A2B9F95C300B3F246 /* test.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4185E5B2B82B1BA00F889BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4185E392B82B1B800F889BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4185E402B82B1B800F889BA;
+			remoteInfo = Dota2Technopark;
+		};
+		B4185E652B82B1BA00F889BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4185E392B82B1B800F889BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4185E402B82B1B800F889BA;
+			remoteInfo = Dota2Technopark;
+		};
+		B4C39DF92B835EFC004A70DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4185E392B82B1B800F889BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4C39DE72B835EFA004A70DD;
+			remoteInfo = Dota2WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4C39DFC2B835EFC004A70DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B4C39DFB2B835EFC004A70DD /* Dota2WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		164C65B4BD89AE5525E5CE7C /* Pods-Dota2Technopark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark.release.xcconfig"; sourceTree = "<group>"; };
+		276408683B802C103E3A7C1C /* Pods-Dota2TechnoparkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2TechnoparkTests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2TechnoparkTests/Pods-Dota2TechnoparkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		283F3BD6FF224DB6A5E8840F /* Pods-Dota2Technopark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark.debug.xcconfig"; sourceTree = "<group>"; };
+		3183D39C0647415BCFFC1C59 /* Pods-Dota2TechnoparkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2TechnoparkTests.release.xcconfig"; path = "Target Support Files/Pods-Dota2TechnoparkTests/Pods-Dota2TechnoparkTests.release.xcconfig"; sourceTree = "<group>"; };
+		3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2Technopark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2Technopark_Dota2TechnoparkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747C9B0F2B992B6600195855 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		747C9B102B992B6600195855 /* Color+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		747C9B122B992B6600195855 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		747C9B152B992B6600195855 /* TabBarButtonConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonConfiguration.swift; sourceTree = "<group>"; };
+		747C9B172B992B6600195855 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		747C9B182B992B6600195855 /* SteamTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamTabBarController.swift; sourceTree = "<group>"; };
+		747C9B192B992B6600195855 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74F536612B9E234E00D81529 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2TechnoparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4185E412B82B1B800F889BA /* Dota2Technopark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2Technopark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4185E442B82B1B800F889BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4185E462B82B1B800F889BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4185E4E2B82B1B800F889BA /* Dota2Technopark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dota2Technopark.xcdatamodel; sourceTree = "<group>"; };
+		B4185E502B82B1BA00F889BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4185E532B82B1BA00F889BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4185E552B82B1BA00F889BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4185E5A2B82B1BA00F889BA /* Dota2TechnoparkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dota2TechnoparkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkTests.swift; sourceTree = "<group>"; };
+		B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dota2TechnoparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITests.swift; sourceTree = "<group>"; };
+		B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dota2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C39DE92B835EFA004A70DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2WidgetBundle.swift; sourceTree = "<group>"; };
+		B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2Widget.swift; sourceTree = "<group>"; };
+		B4C39DF42B835EFA004A70DD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B4C39DF62B835EFC004A70DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4C39DF82B835EFC004A70DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchContentView.swift; sourceTree = "<group>"; };
+		B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneView.swift; sourceTree = "<group>"; };
+		B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneView.swift; sourceTree = "<group>"; };
+		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DADA249A2B9F95C300B3F246 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4185E3E2B82B1B800F889BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E572B82B1BA00F889BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37542AD3E0F069A8921D7FCB /* Pods_Dota2TechnoparkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E612B82B1BA00F889BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44697F4465DD4C88DC3950E1 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C39DE52B835EFA004A70DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */,
+				B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		747C9B0B2B99286900195855 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E442B82B1B800F889BA /* AppDelegate.swift */,
+				B4185E462B82B1B800F889BA /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		747C9B0C2B99288100195855 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74F536612B9E234E00D81529 /* Background.swift */,
+				B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */,
+				B4185E502B82B1BA00F889BA /* Assets.xcassets */,
+				B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		747C9B0E2B992B6600195855 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				747C9B0F2B992B6600195855 /* UIColor+Hex.swift */,
+				747C9B102B992B6600195855 /* Color+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		747C9B112B992B6600195855 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				747C9B122B992B6600195855 /* Constants.swift */,
+				747C9B142B992B6600195855 /* Model */,
+				747C9B162B992B6600195855 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		747C9B142B992B6600195855 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				747C9B152B992B6600195855 /* TabBarButtonConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		747C9B162B992B6600195855 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				747C9B172B992B6600195855 /* DetailView.swift */,
+				747C9B182B992B6600195855 /* SteamTabBarController.swift */,
+				747C9B192B992B6600195855 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B110B90E8134BF1C031C53E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				283F3BD6FF224DB6A5E8840F /* Pods-Dota2Technopark.debug.xcconfig */,
+				164C65B4BD89AE5525E5CE7C /* Pods-Dota2Technopark.release.xcconfig */,
+				95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */,
+				D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */,
+				276408683B802C103E3A7C1C /* Pods-Dota2TechnoparkTests.debug.xcconfig */,
+				3183D39C0647415BCFFC1C59 /* Pods-Dota2TechnoparkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD84CEAB1CE7EEAF80B989DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */,
+				650CE9386466DC341247FCF5 /* Pods_Dota2Technopark_Dota2TechnoparkUITests.framework */,
+				A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */,
+				B4C39DE92B835EFA004A70DD /* WidgetKit.framework */,
+				B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4185E382B82B1B800F889BA = {
+			isa = PBXGroup;
+			children = (
+				B4185E432B82B1B800F889BA /* Dota2Technopark */,
+				B4185E5D2B82B1BA00F889BA /* Dota2TechnoparkTests */,
+				B4185E672B82B1BA00F889BA /* Dota2TechnoparkUITests */,
+				B4C39DED2B835EFA004A70DD /* Dota2Widget */,
+				B4185E422B82B1B800F889BA /* Products */,
+				7B110B90E8134BF1C031C53E /* Pods */,
+				AD84CEAB1CE7EEAF80B989DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4185E422B82B1B800F889BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E412B82B1B800F889BA /* Dota2Technopark.app */,
+				B4185E5A2B82B1BA00F889BA /* Dota2TechnoparkTests.xctest */,
+				B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */,
+				B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4185E432B82B1B800F889BA /* Dota2Technopark */ = {
+			isa = PBXGroup;
+			children = (
+				747C9B0B2B99286900195855 /* Application */,
+				B4C39E1B2B873053004A70DD /* Modules */,
+				747C9B0C2B99288100195855 /* Helpers */,
+				B4185E552B82B1BA00F889BA /* Info.plist */,
+			);
+			path = Dota2Technopark;
+			sourceTree = "<group>";
+		};
+		B4185E5D2B82B1BA00F889BA /* Dota2TechnoparkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */,
+			);
+			path = Dota2TechnoparkTests;
+			sourceTree = "<group>";
+		};
+		B4185E672B82B1BA00F889BA /* Dota2TechnoparkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */,
+				B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */,
+			);
+			path = Dota2TechnoparkUITests;
+			sourceTree = "<group>";
+		};
+		B4C39DED2B835EFA004A70DD /* Dota2Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */,
+				B4C39DF02B835EFA004A70DD /* Dota2WidgetLiveActivity.swift */,
+				B4C39DF22B835EFA004A70DD /* Dota2Widget.swift */,
+				B4C39DF42B835EFA004A70DD /* AppIntent.swift */,
+				B4C39DF62B835EFC004A70DD /* Assets.xcassets */,
+				B4C39DF82B835EFC004A70DD /* Info.plist */,
+			);
+			path = Dota2Widget;
+			sourceTree = "<group>";
+		};
+		B4C39E1A2B873038004A70DD /* MatchModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */,
+			);
+			path = MatchModule;
+			sourceTree = "<group>";
+		};
+		B4C39E1B2B873053004A70DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F70F2B9E2CB600C24352 /* MainModule */,
+				B4DA71132B9E280800195789 /* ProfileModule */,
+				747C9B0E2B992B6600195855 /* Extensions */,
+				747C9B112B992B6600195855 /* TabBar */,
+				B4C39E1A2B873038004A70DD /* MatchModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B4DA71132B9E280800195789 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		B4E8F70F2B9E2CB600C24352 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */,
+				DADA249A2B9F95C300B3F246 /* test.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4185E402B82B1B800F889BA /* Dota2Technopark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4185E6E2B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2Technopark" */;
+			buildPhases = (
+				8B0BDBD5672051CADC92833B /* [CP] Check Pods Manifest.lock */,
+				B4185E3D2B82B1B800F889BA /* Sources */,
+				B4185E3E2B82B1B800F889BA /* Frameworks */,
+				B4185E3F2B82B1B800F889BA /* Resources */,
+				5BF3D5103BDA94F44CC4A6E9 /* [CP] Embed Pods Frameworks */,
+				B4C39DFC2B835EFC004A70DD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4C39DFA2B835EFC004A70DD /* PBXTargetDependency */,
+			);
+			name = Dota2Technopark;
+			productName = Dota2Technopark;
+			productReference = B4185E412B82B1B800F889BA /* Dota2Technopark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4185E592B82B1BA00F889BA /* Dota2TechnoparkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4185E712B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2TechnoparkTests" */;
+			buildPhases = (
+				0E577911ACC823092EDBAFA4 /* [CP] Check Pods Manifest.lock */,
+				B4185E562B82B1BA00F889BA /* Sources */,
+				B4185E572B82B1BA00F889BA /* Frameworks */,
+				B4185E582B82B1BA00F889BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4185E5C2B82B1BA00F889BA /* PBXTargetDependency */,
+			);
+			name = Dota2TechnoparkTests;
+			productName = Dota2TechnoparkTests;
+			productReference = B4185E5A2B82B1BA00F889BA /* Dota2TechnoparkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4185E632B82B1BA00F889BA /* Dota2TechnoparkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4185E742B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2TechnoparkUITests" */;
+			buildPhases = (
+				8B3BF65ADC8F91454EAEEB1C /* [CP] Check Pods Manifest.lock */,
+				B4185E602B82B1BA00F889BA /* Sources */,
+				B4185E612B82B1BA00F889BA /* Frameworks */,
+				B4185E622B82B1BA00F889BA /* Resources */,
+				33E420BA64018B25B85C017E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4185E662B82B1BA00F889BA /* PBXTargetDependency */,
+			);
+			name = Dota2TechnoparkUITests;
+			productName = Dota2TechnoparkUITests;
+			productReference = B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C39DFF2B835EFC004A70DD /* Build configuration list for PBXNativeTarget "Dota2WidgetExtension" */;
+			buildPhases = (
+				B4C39DE42B835EFA004A70DD /* Sources */,
+				B4C39DE52B835EFA004A70DD /* Frameworks */,
+				B4C39DE62B835EFA004A70DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dota2WidgetExtension;
+			productName = Dota2WidgetExtension;
+			productReference = B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4185E392B82B1B800F889BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B4185E402B82B1B800F889BA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					B4185E592B82B1BA00F889BA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B4185E402B82B1B800F889BA;
+					};
+					B4185E632B82B1BA00F889BA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B4185E402B82B1B800F889BA;
+					};
+					B4C39DE72B835EFA004A70DD = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B4185E3C2B82B1B800F889BA /* Build configuration list for PBXProject "Dota2Technopark" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4185E382B82B1B800F889BA;
+			productRefGroup = B4185E422B82B1B800F889BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4185E402B82B1B800F889BA /* Dota2Technopark */,
+				B4185E592B82B1BA00F889BA /* Dota2TechnoparkTests */,
+				B4185E632B82B1BA00F889BA /* Dota2TechnoparkUITests */,
+				B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4185E3F2B82B1B800F889BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4185E542B82B1BA00F889BA /* LaunchScreen.storyboard in Resources */,
+				B4185E512B82B1BA00F889BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E582B82B1BA00F889BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E622B82B1BA00F889BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C39DE62B835EFA004A70DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DF72B835EFC004A70DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E577911ACC823092EDBAFA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dota2TechnoparkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E420BA64018B25B85C017E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF3D5103BDA94F44CC4A6E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dota2Technopark/Pods-Dota2Technopark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0BDBD5672051CADC92833B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dota2Technopark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3BF65ADC8F91454EAEEB1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dota2Technopark-Dota2TechnoparkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4185E3D2B82B1B800F889BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
+				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
+				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
+				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
+				747C9B1E2B992B6600195855 /* DetailView.swift in Sources */,
+				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
+				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
+				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
+				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
+				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
+				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
+				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
+				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
+				DADA249B2B9F95C300B3F246 /* test.swift in Sources */,
+				74F536622B9E234E00D81529 /* Background.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E562B82B1BA00F889BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4185E602B82B1BA00F889BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */,
+				B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4C39DE42B835EFA004A70DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */,
+				B4C39DF52B835EFA004A70DD /* AppIntent.swift in Sources */,
+				B4C39DF32B835EFA004A70DD /* Dota2Widget.swift in Sources */,
+				B4C39DF12B835EFA004A70DD /* Dota2WidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4185E5C2B82B1BA00F889BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4185E402B82B1B800F889BA /* Dota2Technopark */;
+			targetProxy = B4185E5B2B82B1BA00F889BA /* PBXContainerItemProxy */;
+		};
+		B4185E662B82B1BA00F889BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4185E402B82B1B800F889BA /* Dota2Technopark */;
+			targetProxy = B4185E652B82B1BA00F889BA /* PBXContainerItemProxy */;
+		};
+		B4C39DFA2B835EFC004A70DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4C39DE72B835EFA004A70DD /* Dota2WidgetExtension */;
+			targetProxy = B4C39DF92B835EFC004A70DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4185E522B82B1BA00F889BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4185E532B82B1BA00F889BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4185E6C2B82B1BA00F889BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4185E6D2B82B1BA00F889BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4185E6F2B82B1BA00F889BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283F3BD6FF224DB6A5E8840F /* Pods-Dota2Technopark.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Technopark/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4185E702B82B1BA00F889BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164C65B4BD89AE5525E5CE7C /* Pods-Dota2Technopark.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Technopark/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4185E722B82B1BA00F889BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276408683B802C103E3A7C1C /* Pods-Dota2TechnoparkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2TechnoparkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dota2Technopark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dota2Technopark";
+			};
+			name = Debug;
+		};
+		B4185E732B82B1BA00F889BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3183D39C0647415BCFFC1C59 /* Pods-Dota2TechnoparkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2TechnoparkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dota2Technopark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dota2Technopark";
+			};
+			name = Release;
+		};
+		B4185E752B82B1BA00F889BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2TechnoparkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dota2Technopark;
+			};
+			name = Debug;
+		};
+		B4185E762B82B1BA00F889BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2TechnoparkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dota2Technopark;
+			};
+			name = Release;
+		};
+		B4C39DFD2B835EFC004A70DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dota2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark.Dota2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4C39DFE2B835EFC004A70DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ8B22PL56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dota2Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dota2Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.Dota2Technopark.Dota2Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4185E3C2B82B1B800F889BA /* Build configuration list for PBXProject "Dota2Technopark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4185E6C2B82B1BA00F889BA /* Debug */,
+				B4185E6D2B82B1BA00F889BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4185E6E2B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2Technopark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4185E6F2B82B1BA00F889BA /* Debug */,
+				B4185E702B82B1BA00F889BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4185E712B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2TechnoparkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4185E722B82B1BA00F889BA /* Debug */,
+				B4185E732B82B1BA00F889BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4185E742B82B1BA00F889BA /* Build configuration list for PBXNativeTarget "Dota2TechnoparkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4185E752B82B1BA00F889BA /* Debug */,
+				B4185E762B82B1BA00F889BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C39DFF2B835EFC004A70DD /* Build configuration list for PBXNativeTarget "Dota2WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C39DFD2B835EFC004A70DD /* Debug */,
+				B4C39DFE2B835EFC004A70DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B4185E4D2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B4185E4E2B82B1B800F889BA /* Dota2Technopark.xcdatamodel */,
+			);
+			currentVersion = B4185E4E2B82B1B800F889BA /* Dota2Technopark.xcdatamodel */;
+			path = Dota2Technopark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B4185E392B82B1B800F889BA /* Project object */;
+}
