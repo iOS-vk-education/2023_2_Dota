@@ -5,16 +5,15 @@
 //  Created by Mike Ulanov on 22.02.2024.
 //
 
+
 import SwiftUI
 
 struct MatchContentView: View {
+    
     var body: some View {
         ZStack {
-            BackgroundView(imageOnBackground: false, durationTime: 100)
+//            BackgroundView(imageOnBackground: false, durationTime: 100)
             VStack {
-                MatchHeaderView()
-                SegmentedTabView()
-                //Тут должен быть вью выбора детальной инфы
                 ScrollView(showsIndicators: false){
                     VStack(alignment: .leading, spacing: 40){
                         VStack(spacing: 0, content: {

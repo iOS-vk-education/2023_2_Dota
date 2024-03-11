@@ -74,7 +74,7 @@ struct SegmentedControl<Indicator: View>: View {
 
 struct SegmentedTabView: View {
     //View Properties
-    @State private var activeTab: SegmentedTab = .match
+    @State private var activeTab: SegmentedTab = .first
     @State private var type2: Bool = false
     var body: some View {
         NavigationStack {
@@ -101,6 +101,15 @@ struct SegmentedTabView: View {
                 }
                 .padding(.horizontal, type2 ? 15 : 0)
                 
+                //switch for navigation
+                switch activeTab {
+                    case .first:
+                        MatchContentView()
+                    case .second:
+                        Text("Содержимое для вкладки Избранное")
+                    case .third:
+                        Text("Содержимое для вкладки Звонок")
+                }
                 Spacer(minLength: 0)
             }
             .padding(.vertical, type2 ? 15 : 0)
@@ -110,16 +119,14 @@ struct SegmentedTabView: View {
 }
 
 enum SegmentedTab: String, CaseIterable {
-    case match = "trophy.fill"
-    case favorites = "heart.fill"
-    case notifications = "bell.fill"
-    case profile = "person.fill"
+    case first = "trophy.fill"
+    case second = "heart.fill"
+    case third = "bell.fill"
 }
 
 
 
 #Preview(){
-    MatchContentView()
-//    SegmentedTabView()
+    SegmentedTabView()
 }
 
