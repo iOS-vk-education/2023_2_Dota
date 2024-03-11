@@ -60,12 +60,12 @@ struct SegmentedControl<Indicator: View>: View {
                     }
                 }
                 // можно попробовать .onRecieve с Combine
-                .onChange(of: activeTab) { newActiveTab in
+                .onChange(of: activeTab) {
                     if swipeDetected {
-                        changeTab(to: newActiveTab, containerWidthForEachTab: containerWidthForEachTab)
+                        changeTab(to: activeTab, containerWidthForEachTab: containerWidthForEachTab)
                         swipeDetected = false
                     }
-            }
+                }
         }
     }
     .frame(height: height)
