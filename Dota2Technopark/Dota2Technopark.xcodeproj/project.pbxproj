@@ -37,6 +37,7 @@
 		B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */; };
 		B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
+		DADA249B2B9F95C300B3F246 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA249A2B9F95C300B3F246 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneView.swift; sourceTree = "<group>"; };
 		B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneView.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DADA249A2B9F95C300B3F246 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */,
+				DADA249A2B9F95C300B3F246 /* test.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
 				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
 				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
+				DADA249B2B9F95C300B3F246 /* test.swift in Sources */,
 				74F536622B9E234E00D81529 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
