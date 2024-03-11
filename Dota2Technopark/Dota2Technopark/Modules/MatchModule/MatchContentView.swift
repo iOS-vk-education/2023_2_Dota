@@ -13,16 +13,17 @@ struct MatchContentView: View {
             BackgroundView(imageOnBackground: false, durationTime: 100)
             VStack {
                 MatchHeaderView()
+                SegmentedTabView()
                 //Тут должен быть вью выбора детальной инфы
                 ScrollView(showsIndicators: false){
                     VStack(alignment: .leading, spacing: 40){
-                        VStack(spacing: 12, content: {
+                        VStack(spacing: 0, content: {
                             TeamHeaderView(teamName: "Силы Света")
                             ForEach(0 ..< 5) { i in
                                 MatchListCellView()
                             }
                         })
-                        VStack(spacing: 12, content: {
+                        VStack(spacing: 0, content: {
                             TeamHeaderView(teamName: "Силы тьмы")
                             ForEach(0 ..< 5) { i in
                                 MatchListCellView()
@@ -68,7 +69,7 @@ struct MatchHeaderView: View{
                 })
                 Spacer()
                 VStack(alignment: .leading, content: {
-                        Text("Силы света")
+                        Text("Силы тьмы")
                             .font(.system(size: 24))
                             .foregroundColor(.gray)
                         Text("Поражение")
@@ -99,7 +100,6 @@ struct MatchListCellView: View{
                 Image("heroIcon")
                     .resizable()
                     .frame(width: 50, height: 50)
-                    .padding(.leading, 24)
                 VStack(alignment: .leading, content:
                     {
                         Text("Oleg_nagibator")
@@ -125,12 +125,14 @@ struct MatchListCellView: View{
                     ItemsCellView()
                 })
             }
-            .shadow(color: Color.black, radius: 3, x: 3, y: 3)
-            .padding(4)
-            .border(Color.black, width: 3)
-            .cornerRadius(34)
-
+            .padding(10)
+            .background(Color.gray.gradient)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
         }
+        .frame(height: 100)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
     }
 }
 
@@ -174,7 +176,7 @@ struct ItemsCellView: View {
             }
         })
         .padding(6)
-        .padding(.trailing, 24)
+        .padding(.trailing, 16)
     }
 }
 
@@ -182,3 +184,4 @@ struct ItemsCellView: View {
 #Preview{
     MatchContentView()
 }
+
