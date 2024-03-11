@@ -9,30 +9,36 @@
 import SwiftUI
 
 struct MatchContentView: View {
+    @Binding var type2 : Bool
     
     var body: some View {
-        ZStack {
-//            BackgroundView(imageOnBackground: false, durationTime: 100)
-            VStack {
-                ScrollView(showsIndicators: false){
-                    VStack(alignment: .leading, spacing: 40){
-                        VStack(spacing: 0, content: {
-                            TeamHeaderView(teamName: "Силы Света")
-                            ForEach(0 ..< 5) { i in
-                                MatchListCellView()
-                            }
-                        })
-                        VStack(spacing: 0, content: {
-                            TeamHeaderView(teamName: "Силы тьмы")
-                            ForEach(0 ..< 5) { i in
-                                MatchListCellView()
-                            }
-                        })
-                    }
+        VStack {
+            ScrollView(showsIndicators: false){
+                VStack(alignment: .leading, spacing: 16){
+                    VStack(spacing: 0, content: {
+                        TeamHeaderView(teamName: "Силы Света")
+                            .padding(.top, 16)
+                        ForEach(0 ..< 5) { i in
+                            MatchListCellView()
+                                .onTapGesture {
+                                    type2 = false
+                                }
+                        }
+                    })
+                    VStack(spacing: 0, content: {
+                        TeamHeaderView(teamName: "Силы тьмы")
+                        ForEach(0 ..< 5) { i in
+                            MatchListCellView()
+                                .onTapGesture {
+                                    type2 = true
+                                }
+                        }
+                    })
                 }
             }
-            Spacer()
         }
+        .ignoresSafeArea()
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -87,7 +93,7 @@ struct MatchHeaderView: View{
             }
             .padding(16)
         }
-        .shadow(color: Color.black, radius: 30, x: 3, y: 3)
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -125,7 +131,7 @@ struct MatchListCellView: View{
                 })
             }
             .padding(10)
-            .background(Color.gray.gradient)
+            .background(Color.black.gradient)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
         }
@@ -181,6 +187,5 @@ struct ItemsCellView: View {
 
 
 #Preview{
-    MatchContentView()
+    MatchContentView(type2: .constant(false))
 }
-

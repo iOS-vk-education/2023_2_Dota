@@ -39,6 +39,8 @@
 		B4FF28AD2B9E669100A1EC08 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */; };
 		B4FF28AF2B9E694F00A1EC08 /* tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28AE2B9E694F00A1EC08 /* tests.swift */; };
 		B4FF28B12B9F69A000A1EC08 /* tests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28B02B9F69A000A1EC08 /* tests2.swift */; };
+		B4FF28B32B9FAB3400A1EC08 /* tests3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28B22B9FAB3400A1EC08 /* tests3.swift */; };
+		B4FF28B52B9FB0FD00A1EC08 /* DragHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,8 @@
 		B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		B4FF28AE2B9E694F00A1EC08 /* tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests.swift; sourceTree = "<group>"; };
 		B4FF28B02B9F69A000A1EC08 /* tests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests2.swift; sourceTree = "<group>"; };
+		B4FF28B22B9FAB3400A1EC08 /* tests3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests3.swift; sourceTree = "<group>"; };
+		B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragHelper.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,6 +358,8 @@
 				B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */,
 				B4FF28AE2B9E694F00A1EC08 /* tests.swift */,
 				B4FF28B02B9F69A000A1EC08 /* tests2.swift */,
+				B4FF28B22B9FAB3400A1EC08 /* tests3.swift */,
+				B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */,
 			);
 			path = ModuleHelpers;
 			sourceTree = "<group>";
@@ -636,6 +642,8 @@
 				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
 				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
 				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
+				B4FF28B32B9FAB3400A1EC08 /* tests3.swift in Sources */,
+				B4FF28B52B9FB0FD00A1EC08 /* DragHelper.swift in Sources */,
 				B4FF28AD2B9E669100A1EC08 /* SegmentedControl.swift in Sources */,
 				B4FF28AF2B9E694F00A1EC08 /* tests.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,

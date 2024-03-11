@@ -29,7 +29,6 @@ struct DetailView: View {
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
-                MatchContentView().tag(TabState.settings).tabItem { Image(systemName: "gear")
                 }
                 MainView().tag(TabState.main).tabItem {
                     Image(systemName: "house")
@@ -52,7 +51,6 @@ struct DetailView: View {
             }
             .ignoresSafeArea(edges: .bottom)
         }
-    }
 }
 
 struct TabBarItem: View {

@@ -189,7 +189,7 @@ struct MainListCellView: View{
     var body: some View {
         VStack {
             HStack {
-                Image("HeroIcon")
+                Image("heroIcon")
                     .resizable()
                     .frame(width: 63, height: 63)
                     .cornerRadius(40)
