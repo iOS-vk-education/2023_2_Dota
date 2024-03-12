@@ -187,7 +187,7 @@ struct MainListCellView: View{
     var body: some View {
         VStack {
             HStack {
-                Image("HeroIcon")
+                Image("heroIcon")
                     .resizable()
                     .frame(width: 60, height: 60)
                 VStack(alignment: .leading, content:

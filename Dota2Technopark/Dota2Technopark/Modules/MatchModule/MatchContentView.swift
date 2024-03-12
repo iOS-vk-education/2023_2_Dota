@@ -5,34 +5,40 @@
 //  Created by Mike Ulanov on 22.02.2024.
 //
 
+
 import SwiftUI
 
 struct MatchContentView: View {
+    @Binding var type2 : Bool
+    
     var body: some View {
-        ZStack {
-            BackgroundView(imageOnBackground: false, durationTime: 100)
-            VStack {
-                MatchHeaderView()
-                //Тут должен быть вью выбора детальной инфы
-                ScrollView(showsIndicators: false){
-                    VStack(alignment: .leading, spacing: 40){
-                        VStack(spacing: 12, content: {
-                            TeamHeaderView(teamName: "Силы Света")
-                            ForEach(0 ..< 5) { i in
-                                MatchListCellView()
-                            }
-                        })
-                        VStack(spacing: 12, content: {
-                            TeamHeaderView(teamName: "Силы тьмы")
-                            ForEach(0 ..< 5) { i in
-                                MatchListCellView()
-                            }
-                        })
-                    }
+        VStack {
+            ScrollView(showsIndicators: false){
+                VStack(alignment: .leading, spacing: 16){
+                    VStack(spacing: 0, content: {
+                        TeamHeaderView(teamName: "Силы Света")
+                            .padding(.top, 16)
+                        ForEach(0 ..< 5) { i in
+                            MatchListCellView()
+                                .onTapGesture {
+                                    type2 = false
+                                }
+                        }
+                    })
+                    VStack(spacing: 0, content: {
+                        TeamHeaderView(teamName: "Силы тьмы")
+                        ForEach(0 ..< 5) { i in
+                            MatchListCellView()
+                                .onTapGesture {
+                                    type2 = true
+                                }
+                        }
+                    })
                 }
             }
-            Spacer()
         }
+        .ignoresSafeArea()
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -68,7 +74,7 @@ struct MatchHeaderView: View{
                 })
                 Spacer()
                 VStack(alignment: .leading, content: {
-                        Text("Силы света")
+                        Text("Силы тьмы")
                             .font(.system(size: 24))
                             .foregroundColor(.gray)
                         Text("Поражение")
@@ -87,7 +93,7 @@ struct MatchHeaderView: View{
             }
             .padding(16)
         }
-        .shadow(color: Color.black, radius: 30, x: 3, y: 3)
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -99,7 +105,6 @@ struct MatchListCellView: View{
                 Image("heroIcon")
                     .resizable()
                     .frame(width: 50, height: 50)
-                    .padding(.leading, 24)
                 VStack(alignment: .leading, content:
                     {
                         Text("Oleg_nagibator")
@@ -125,12 +130,14 @@ struct MatchListCellView: View{
                     ItemsCellView()
                 })
             }
-            .shadow(color: Color.black, radius: 3, x: 3, y: 3)
-            .padding(4)
-            .border(Color.black, width: 3)
-            .cornerRadius(34)
-
+            .padding(10)
+            .background(Color.black.gradient)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
         }
+        .frame(height: 100)
+        .padding(.leading, 16)
+        .padding(.trailing, 16)
     }
 }
 
@@ -174,11 +181,11 @@ struct ItemsCellView: View {
             }
         })
         .padding(6)
-        .padding(.trailing, 24)
+        .padding(.trailing, 16)
     }
 }
 
 
 #Preview{
-    MatchContentView()
+    MatchContentView(type2: .constant(false))
 }
