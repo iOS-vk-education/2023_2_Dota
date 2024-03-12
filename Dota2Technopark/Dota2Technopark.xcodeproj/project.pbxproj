@@ -40,6 +40,10 @@
 		7493E7A52B9DEB6500FD3FF1 /* AuthRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */; };
 		7493E7A72B9DECB300FD3FF1 /* AuthViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7A62B9DECB300FD3FF1 /* AuthViewIO.swift */; };
 		749439D52B9FEB97001C497D /* SearchViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439D42B9FEB97001C497D /* SearchViewWrapper.swift */; };
+		749439D82B9FF064001C497D /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439D72B9FF064001C497D /* AlamofireNetworkService.swift */; };
+		749439DB2B9FF0DC001C497D /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439DA2B9FF0DC001C497D /* URLS.swift */; };
+		749439DE2B9FF6D2001C497D /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439DD2B9FF6D2001C497D /* Players.swift */; };
+		749439E12B9FFAD0001C497D /* SearchNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439E02B9FFAD0001C497D /* SearchNetworkService.swift */; };
 		74F536602B9DFEB100D81529 /* steam.json in Resources */ = {isa = PBXBuildFile; fileRef = 74F5365F2B9DFEB100D81529 /* steam.json */; };
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
@@ -133,6 +137,10 @@
 		7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouterInput.swift; sourceTree = "<group>"; };
 		7493E7A62B9DECB300FD3FF1 /* AuthViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewIO.swift; sourceTree = "<group>"; };
 		749439D42B9FEB97001C497D /* SearchViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewWrapper.swift; sourceTree = "<group>"; };
+		749439D72B9FF064001C497D /* AlamofireNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkService.swift; sourceTree = "<group>"; };
+		749439DA2B9FF0DC001C497D /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		749439DD2B9FF6D2001C497D /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		749439E02B9FFAD0001C497D /* SearchNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkService.swift; sourceTree = "<group>"; };
 		74F5365F2B9DFEB100D81529 /* steam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = steam.json; sourceTree = "<group>"; };
 		95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2TechnoparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +237,7 @@
 		740488932B9E25BF00F64DAC /* Instruments + Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				749439D62B9FF04F001C497D /* Services */,
 				74DEB1992B9E4AFB0078B6ED /* Animations */,
 				74DEB1982B9E4A850078B6ED /* BackgroundView */,
 				74DEB1972B9E4A2A0078B6ED /* Router */,
@@ -260,6 +269,7 @@
 		7493E7702B9DDA5A00FD3FF1 /* SearchModule */ = {
 			isa = PBXGroup;
 			children = (
+				749439DC2B9FF640001C497D /* Entity */,
 				7493E7752B9DDAA000FD3FF1 /* Assembly */,
 				7493E7742B9DDA9500FD3FF1 /* Router */,
 				7493E7732B9DDA8B00FD3FF1 /* Presenter */,
@@ -367,6 +377,40 @@
 				7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		749439D62B9FF04F001C497D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				749439DF2B9FFAB6001C497D /* Search */,
+				749439D92B9FF0C8001C497D /* Endpoints */,
+				749439D72B9FF064001C497D /* AlamofireNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		749439D92B9FF0C8001C497D /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				749439DA2B9FF0DC001C497D /* URLS.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		749439DC2B9FF640001C497D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				749439DD2B9FF6D2001C497D /* Players.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		749439DF2B9FFAB6001C497D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				749439E02B9FFAD0001C497D /* SearchNetworkService.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		74DEB1972B9E4A2A0078B6ED /* Router */ = {
@@ -793,6 +837,7 @@
 			files = (
 				749439D52B9FEB97001C497D /* SearchViewWrapper.swift in Sources */,
 				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
+				749439E12B9FFAD0001C497D /* SearchNetworkService.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
 				7404889B2B9E25C000F64DAC /* UIColor+Hex.swift in Sources */,
@@ -806,12 +851,14 @@
 				7493E77B2B9DDAD700FD3FF1 /* SearchRouter.swift in Sources */,
 				7404889A2B9E25C000F64DAC /* ContentView.swift in Sources */,
 				7493E7962B9DE9DE00FD3FF1 /* AuthPresenter.swift in Sources */,
+				749439DE2B9FF6D2001C497D /* Players.swift in Sources */,
 				7493E77B2B9DDAD700FD3FF1 /* SearchRouter.swift in Sources */,
 				7493E7A32B9DEB1700FD3FF1 /* AuthModuleIO.swift in Sources */,
 				7493E7852B9DDD3D00FD3FF1 /* SearchViewIO.swift in Sources */,
 				7404889C2B9E25C000F64DAC /* Color+Hex.swift in Sources */,
 				7493E7872B9DDE9500FD3FF1 /* BaseSwiftRouter.swift in Sources */,
 				7493E7982B9DE9E900FD3FF1 /* AuthModel.swift in Sources */,
+				749439D82B9FF064001C497D /* AlamofireNetworkService.swift in Sources */,
 				7493E7772B9DDABA00FD3FF1 /* SearchView.swift in Sources */,
 				741601852B9932A500D26213 /* (null) in Sources */,
 				7493E79D2B9DE9FF00FD3FF1 /* AuthAssembly.swift in Sources */,
@@ -825,6 +872,7 @@
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 				7493E7832B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift in Sources */,
 				7404888A2B9E259700F64DAC /* Background.swift in Sources */,
+				749439DB2B9FF0DC001C497D /* URLS.swift in Sources */,
 				7493E7942B9DE9D600FD3FF1 /* AuthView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 				7493E7832B9DDCC300FD3FF1 /* SearchRouterModuleInput.swift in Sources */,
