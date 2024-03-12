@@ -39,6 +39,7 @@
 		7493E7A32B9DEB1700FD3FF1 /* AuthModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7A22B9DEB1700FD3FF1 /* AuthModuleIO.swift */; };
 		7493E7A52B9DEB6500FD3FF1 /* AuthRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */; };
 		7493E7A72B9DECB300FD3FF1 /* AuthViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493E7A62B9DECB300FD3FF1 /* AuthViewIO.swift */; };
+		749439D52B9FEB97001C497D /* SearchViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749439D42B9FEB97001C497D /* SearchViewWrapper.swift */; };
 		74F536602B9DFEB100D81529 /* steam.json in Resources */ = {isa = PBXBuildFile; fileRef = 74F5365F2B9DFEB100D81529 /* steam.json */; };
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
@@ -131,6 +132,7 @@
 		7493E7A22B9DEB1700FD3FF1 /* AuthModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleIO.swift; sourceTree = "<group>"; };
 		7493E7A42B9DEB6500FD3FF1 /* AuthRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouterInput.swift; sourceTree = "<group>"; };
 		7493E7A62B9DECB300FD3FF1 /* AuthViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewIO.swift; sourceTree = "<group>"; };
+		749439D42B9FEB97001C497D /* SearchViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewWrapper.swift; sourceTree = "<group>"; };
 		74F5365F2B9DFEB100D81529 /* steam.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = steam.json; sourceTree = "<group>"; };
 		95ACBD9F1DF01E74F7098323 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A726D6DF590061338C98C342 /* Pods_Dota2TechnoparkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota2TechnoparkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +274,7 @@
 			children = (
 				7493E7762B9DDABA00FD3FF1 /* SearchView.swift */,
 				7493E7842B9DDD3D00FD3FF1 /* SearchViewIO.swift */,
+				749439D42B9FEB97001C497D /* SearchViewWrapper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749439D52B9FEB97001C497D /* SearchViewWrapper.swift in Sources */,
 				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,

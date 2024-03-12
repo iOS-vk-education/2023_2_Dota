@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SteamLogin
 
 final class SearchView: UIViewController {
     var output: SearchViewOutput?

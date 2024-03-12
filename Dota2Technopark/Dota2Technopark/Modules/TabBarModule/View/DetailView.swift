@@ -25,12 +25,14 @@ struct DetailView: View {
         
         ZStack(alignment: .bottom) {
             TabView(selection: $selectedTab) {
-                Text("3").tag(TabState.search)
+                SearchViewWrapper().tag(TabState.search)
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                     }
-                MatchContentView().tag(TabState.settings).tabItem { Image(systemName: "gear")
-                }
+                MatchContentView().tag(TabState.settings)
+                    .tabItem {
+                        Image(systemName: "gear")
+                    }
                 MainView().tag(TabState.main).tabItem {
                     Image(systemName: "house")
                 }
