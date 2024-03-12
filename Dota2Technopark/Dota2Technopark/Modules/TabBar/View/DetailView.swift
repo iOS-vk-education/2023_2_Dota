@@ -25,14 +25,10 @@ struct DetailView: View {
         
         ZStack(alignment: .bottom) {
             TabView(selection: $selectedTab) {
-                Text("3").tag(TabState.search)
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                    }
-                }
-                MainView().tag(TabState.main).tabItem {
-                    Image(systemName: "house")
-                }
+                
+                MainView().tag(TabState.main)
+                NavigationTabView(tabs: SegmentedTab.allCases).tag(TabState.search)
+                Text("1").tag(TabState.settings)
             }
             
             GeometryReader { geometry in
@@ -51,7 +47,9 @@ struct DetailView: View {
             }
             .ignoresSafeArea(edges: .bottom)
         }
+    }
 }
+
 
 struct TabBarItem: View {
     @State var config: TabBarButtonConfiguration
