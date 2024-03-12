@@ -24,73 +24,31 @@ struct MainHeaderView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 15, content: {
-                RoundedRectangle(cornerRadius: 25)
-                    .foregroundStyle(.white)
+                RoundedRectangle(cornerRadius: 16)
+                    .foregroundStyle(.white.gradient)
                     .shadow(color: Color.gray, radius: 10, x: 0, y: 10)
                     .overlay {
                         VStack {
                             Image("avatar")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                                .padding(10)
+                                .clipShape(RoundedRectangle(cornerRadius: 16))
+                                .padding(8)
+                                .padding(.top, -16)
                             Text("TSpirit.Yatoro")
                                 .font(.system(size: 25))
+                                .minimumScaleFactor(0.5)
+                                .lineLimit(1)
+                                .padding(.horizontal, 8)
                         }
                     }
                 VStack {
-                    RoundedRectangle(cornerRadius: 25)
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundStyle(.white)
-                        .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
-                        .overlay {
-                            VStack {
-                                Image("rate")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.top)
-                                Text("#52")
-                                    .font(.system(size: 25))
-                            }
-                        }
-                    RoundedRectangle(cornerRadius: 25)
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundStyle(.white)
-                        .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
-                        .overlay {
-                            VStack {
-                                Text("9594")
-                                    .font(.system(size: 25))
-                                Text("Матчи")
-                                    .font(.system(size: 25))
-                            }
-                        }
+                    MainHeaderRateInformationRectangle()
+                    MainHeaderInformationRectangle(topText: "9594", bottomText: "Матчи")
                 }
                 VStack {
-                    RoundedRectangle(cornerRadius: 25)
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundStyle(.white)
-                        .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
-                        .overlay {
-                            VStack {
-                                Text("1294")
-                                    .font(.system(size: 25))
-                                Text("MMR")
-                                    .font(.system(size: 25))
-                            }
-                        }
-                    RoundedRectangle(cornerRadius: 25)
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundStyle(.white)
-                        .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
-                        .overlay {
-                            VStack {
-                                Text("51,64%")
-                                    .font(.system(size: 25))
-                                Text("Победы")
-                                    .font(.system(size: 25))
-                            }
-                        }
+                    MainHeaderInformationRectangle(topText: "1294", bottomText: "MMR")
+                    MainHeaderInformationRectangle(topText: "51,64%", bottomText: "Победы")
                 }
             })
             .padding(15)
@@ -185,14 +143,53 @@ struct MainContentView: View {
     }
 }
 
+struct MainHeaderInformationRectangle: View {
+    var topText: String
+    var bottomText: String
+    var body: some View {
+        RoundedRectangle(cornerRadius: 16)
+            .aspectRatio(1, contentMode: .fit)
+            .foregroundStyle(.white.gradient)
+            .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
+            .overlay {
+                VStack {
+                    VStack {
+                        Text(topText)
+                            .font(.system(size: 25))
+                        Text(bottomText)
+                            .font(.system(size: 20))
+                    }
+                }
+            }
+    }
+}
+
+struct MainHeaderRateInformationRectangle: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 16)
+            .aspectRatio(1, contentMode: .fit)
+            .foregroundStyle(.white.gradient)
+            .shadow(color: Color.gray, radius: 10, x: 0, y: 5)
+            .overlay {
+                VStack {
+                    Image("rate")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.top)
+                    Text("#52")
+                        .font(.system(size: 20))
+                }
+            }
+    }
+}
+
 struct MainListCellView: View{
     var body: some View {
         VStack {
             HStack {
                 Image("heroIcon")
                     .resizable()
-                    .frame(width: 63, height: 63)
-                    .cornerRadius(40)
+                    .frame(width: 60, height: 60)
                 VStack(alignment: .leading, content:
                         {
                     Text("Windranger")
@@ -236,14 +233,14 @@ struct MainListCellView: View{
                             )
                     }
                 })
-//                Spacer()
-//                Rectangle()
-//                    .padding(-10)              индикатор победы/поражения, мне не нравится
-//                    .frame(width: 1)
-//                    .foregroundStyle(Color.green)
+                Spacer()
+                Rectangle()
+                    .padding(-10)
+                    .frame(width: 1)
+                    .foregroundStyle(Color.green.gradient)
             }
             .padding(10)
-            .background(Color.white)
+            .background(Color.white.gradient)
             .clipShape(RoundedRectangle(cornerRadius: 15))
         }
         .frame(height: 100)
