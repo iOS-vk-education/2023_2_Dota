@@ -27,7 +27,7 @@ struct DetailView: View {
             TabView(selection: $selectedTab) {
                 
                 MainView().tag(TabState.main)
-                NavigationTabView(tabs: SegmentedTab.allCases).tag(TabState.search)
+                NavigationTabView().tag(TabState.search)
                 Text("1").tag(TabState.settings)
             }
             

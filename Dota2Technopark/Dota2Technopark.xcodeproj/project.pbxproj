@@ -25,6 +25,11 @@
 		B4185E5F2B82B1BA00F889BA /* Dota2TechnoparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E5E2B82B1BA00F889BA /* Dota2TechnoparkTests.swift */; };
 		B4185E692B82B1BA00F889BA /* Dota2TechnoparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */; };
 		B4185E6B2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */; };
+		B49954C52BA1AD9F00D8F8AC /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49954C42BA1AD9F00D8F8AC /* MatchModel.swift */; };
+		B49954C82BA1B26D00D8F8AC /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49954C72BA1B26D00D8F8AC /* MatchService.swift */; };
+		B49954CA2BA1B4B700D8F8AC /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49954C92BA1B4B700D8F8AC /* MatchViewModel.swift */; };
+		B49954CC2BA1C23600D8F8AC /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49954CB2BA1C23600D8F8AC /* SegmentedControl.swift */; };
+		B49954CF2BA1F11600D8F8AC /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49954CE2BA1F11600D8F8AC /* ApiTest.swift */; };
 		B4C39DEA2B835EFA004A70DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DE92B835EFA004A70DD /* WidgetKit.framework */; };
 		B4C39DEC2B835EFA004A70DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */; };
 		B4C39DEF2B835EFA004A70DD /* Dota2WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39DEE2B835EFA004A70DD /* Dota2WidgetBundle.swift */; };
@@ -36,7 +41,7 @@
 		B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */; };
 		B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */; };
 		B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */; };
-		B4FF28AD2B9E669100A1EC08 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */; };
+		B4FF28AD2B9E669100A1EC08 /* MatchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28AC2B9E669100A1EC08 /* MatchNavigationView.swift */; };
 		B4FF28B52B9FB0FD00A1EC08 /* DragHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */; };
 		B4FF28B72B9FC94800A1EC08 /* ScrollTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF28B62B9FC94800A1EC08 /* ScrollTest.swift */; };
 		D6BB26DBA08CE3C6819E0483 /* Pods_Dota2Technopark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3529EC3C422058732E434A33 /* Pods_Dota2Technopark.framework */; };
@@ -110,6 +115,11 @@
 		B4185E642B82B1BA00F889BA /* Dota2TechnoparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dota2TechnoparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4185E682B82B1BA00F889BA /* Dota2TechnoparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITests.swift; sourceTree = "<group>"; };
 		B4185E6A2B82B1BA00F889BA /* Dota2TechnoparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dota2TechnoparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B49954C42BA1AD9F00D8F8AC /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		B49954C72BA1B26D00D8F8AC /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
+		B49954C92BA1B4B700D8F8AC /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		B49954CB2BA1C23600D8F8AC /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		B49954CE2BA1F11600D8F8AC /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
 		B4C39DE82B835EFA004A70DD /* Dota2WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dota2WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C39DE92B835EFA004A70DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B4C39DEB2B835EFA004A70DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -122,7 +132,7 @@
 		B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchContentView.swift; sourceTree = "<group>"; };
 		B4E8F70D2B9E2C7100C24352 /* ProfileSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneView.swift; sourceTree = "<group>"; };
 		B4E8F7102B9E2CC700C24352 /* MainSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneView.swift; sourceTree = "<group>"; };
-		B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		B4FF28AC2B9E669100A1EC08 /* MatchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchNavigationView.swift; sourceTree = "<group>"; };
 		B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragHelper.swift; sourceTree = "<group>"; };
 		B4FF28B62B9FC94800A1EC08 /* ScrollTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTest.swift; sourceTree = "<group>"; };
 		D4957630B7EEB6AD42893F29 /* Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; path = "Target Support Files/Pods-Dota2Technopark-Dota2TechnoparkUITests/Pods-Dota2Technopark-Dota2TechnoparkUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,6 +310,22 @@
 			path = Dota2TechnoparkUITests;
 			sourceTree = "<group>";
 		};
+		B49954C32BA1AD8C00D8F8AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B49954C42BA1AD9F00D8F8AC /* MatchModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B49954C62BA1B24A00D8F8AC /* Servicies */ = {
+			isa = PBXGroup;
+			children = (
+				B49954C72BA1B26D00D8F8AC /* MatchService.swift */,
+			);
+			path = Servicies;
+			sourceTree = "<group>";
+		};
 		B4C39DED2B835EFA004A70DD /* Dota2Widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,7 +343,10 @@
 			isa = PBXGroup;
 			children = (
 				B4FF28AB2B9E65EA00A1EC08 /* ModuleHelpers */,
-				B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */,
+				B49954C62BA1B24A00D8F8AC /* Servicies */,
+				B49954C32BA1AD8C00D8F8AC /* Models */,
+				B4FF28AC2B9E669100A1EC08 /* MatchNavigationView.swift */,
+				B49954C92BA1B4B700D8F8AC /* MatchViewModel.swift */,
 			);
 			path = MatchModule;
 			sourceTree = "<group>";
@@ -354,9 +383,11 @@
 		B4FF28AB2B9E65EA00A1EC08 /* ModuleHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				B4FF28AC2B9E669100A1EC08 /* SegmentedControl.swift */,
+				B4C39E1C2B8730EB004A70DD /* MatchContentView.swift */,
+				B49954CB2BA1C23600D8F8AC /* SegmentedControl.swift */,
 				B4FF28B42B9FB0FD00A1EC08 /* DragHelper.swift */,
 				B4FF28B62B9FC94800A1EC08 /* ScrollTest.swift */,
+				B49954CE2BA1F11600D8F8AC /* ApiTest.swift */,
 			);
 			path = ModuleHelpers;
 			sourceTree = "<group>";
@@ -632,18 +663,23 @@
 			files = (
 				747C9B1F2B992B6600195855 /* SteamTabBarController.swift in Sources */,
 				747C9B202B992B6600195855 /* ContentView.swift in Sources */,
+				B49954CC2BA1C23600D8F8AC /* SegmentedControl.swift in Sources */,
 				B4FF28B72B9FC94800A1EC08 /* ScrollTest.swift in Sources */,
 				B4E8F70E2B9E2C7100C24352 /* ProfileSceneView.swift in Sources */,
 				B4C39E1D2B8730EB004A70DD /* MatchContentView.swift in Sources */,
+				B49954CF2BA1F11600D8F8AC /* ApiTest.swift in Sources */,
 				747C9B1E2B992B6600195855 /* DetailView.swift in Sources */,
 				B4185E4F2B82B1B800F889BA /* Dota2Technopark.xcdatamodeld in Sources */,
 				747C9B1D2B992B6600195855 /* TabBarButtonConfiguration.swift in Sources */,
 				B4185E452B82B1B800F889BA /* AppDelegate.swift in Sources */,
 				B4FF28B52B9FB0FD00A1EC08 /* DragHelper.swift in Sources */,
-				B4FF28AD2B9E669100A1EC08 /* SegmentedControl.swift in Sources */,
+				B49954C52BA1AD9F00D8F8AC /* MatchModel.swift in Sources */,
+				B4FF28AD2B9E669100A1EC08 /* MatchNavigationView.swift in Sources */,
 				B4E8F7112B9E2CC700C24352 /* MainSceneView.swift in Sources */,
 				B4185E472B82B1B800F889BA /* SceneDelegate.swift in Sources */,
 				747C9B1C2B992B6600195855 /* Constants.swift in Sources */,
+				B49954C82BA1B26D00D8F8AC /* MatchService.swift in Sources */,
+				B49954CA2BA1B4B700D8F8AC /* MatchViewModel.swift in Sources */,
 				747C9B1A2B992B6600195855 /* UIColor+Hex.swift in Sources */,
 				747C9B1B2B992B6600195855 /* Color+Hex.swift in Sources */,
 				DADA249B2B9F95C300B3F246 /* test.swift in Sources */,
