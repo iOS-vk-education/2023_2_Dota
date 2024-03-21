@@ -20,7 +20,7 @@ class MatchViewModel: ObservableObject {
     }
     
     private func fetchMatch() {
-        cancelable = matchService.fetchMatch(by: 7603911812)
+        cancelable = matchService.fetchMatch(by: 7571425597)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion: { error in
                 print(error)
